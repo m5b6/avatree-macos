@@ -1,0 +1,73 @@
+[ 50%] Building CXX object CMakeFiles/ModellerCMD.dir/_main.cpp.o
+In file included from /Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/_main.cpp:1:
+In file included from /Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/../Modeller/include/lungModelling.h:4:
+/Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/../Modeller/include/cellArray.h:24:8: warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif _CELLARRAY_
+       ^
+       //
+In file included from /Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/_main.cpp:1:
+In file included from /Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/../Modeller/include/lungModelling.h:5:
+/Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/../Modeller/include/helper.h:52:8: warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif _HELPER_
+       ^
+       //
+In file included from /Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/_main.cpp:1:
+In file included from /Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/../Modeller/include/lungModelling.h:8:
+/Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/../Modeller/include/dotObj.h:884:8: warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif _DOTOBJ_
+       ^
+       //
+In file included from /Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/_main.cpp:1:
+In file included from /Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/../Modeller/include/lungModelling.h:9:
+/Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/../Modeller/include/treeGeneration.h:143:8: warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif _TREEGENERATIONCLASS_
+       ^
+       //
+In file included from /Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/_main.cpp:1:
+In file included from /Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/../Modeller/include/lungModelling.h:10:
+/Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/../Modeller/include/simulation.h:6:8: warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif _SIMULATIONCLASS_
+       ^
+       //
+In file included from /Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/_main.cpp:1:
+In file included from /Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/../Modeller/include/lungModelling.h:11:
+/Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/../Modeller/include/procedure.h:19:8: warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif _PROCEDURECLASS_
+       ^
+       //
+In file included from /Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/_main.cpp:1:
+In file included from /Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/../Modeller/include/lungModelling.h:13:
+/Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/../Modeller/include/vox.h:14:8: warning: extra tokens at end of #endif directive [-Wextra-tokens]
+#endif _VOX_
+       ^
+       //
+7 warnings generated.
+[100%] Linking CXX executable ModellerCMD
+ld: warning: ignoring duplicate libraries: '-lm', '/opt/homebrew/lib/libzlibstatic.a'
+ld: warning: search path '/Users/mb/Desktop/repos/other/avatree/src/Modeller/ModellerExecutable/lib' not found
+ld: warning: search path '/opt/homebrew/Cellar/cgal/5.6/auxiliary/gmp/lib' not found
+ld: Undefined symbols:
+  dotObj::exportToFile(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, bool), referenced from:
+      _main in _main.cpp.o
+  dotObj::initializeFromFile(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>, bool, bool, bool, bool, bool), referenced from:
+      _main in _main.cpp.o
+  dotObj::mcfskel(), referenced from:
+      _main in _main.cpp.o
+  helper::uniformRandom(), referenced from:
+      _main in _main.cpp.o
+      _main in _main.cpp.o
+      _main in _main.cpp.o
+      _main in _main.cpp.o
+      _main in _main.cpp.o
+      _main in _main.cpp.o
+  status::status(), referenced from:
+      _main in _main.cpp.o
+  volume::exportToFile(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char>>), referenced from:
+      _main in _main.cpp.o
+      _main in _main.cpp.o
+  analysis::analysis(), referenced from:
+      dotObj::dotObj() in _main.cpp.o
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+make[2]: *** [ModellerCMD] Error 1
+make[1]: *** [CMakeFiles/ModellerCMD.dir/all] Error 2
+make: *** [all] Error 2

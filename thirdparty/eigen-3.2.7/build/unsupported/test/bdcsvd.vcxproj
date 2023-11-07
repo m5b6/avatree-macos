@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{943231B4-3A2B-30C9-81F5-688AD78326B3}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>bdcsvd</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\unsupported\test;E:\Libraries\eigen-3.2.7\unsupported\test;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;E:\Libraries\eigen-3.2.7\unsupported\test\..\..\test;E:\Libraries\eigen-3.2.7\unsupported\test\..\..\unsupported;E:\Libraries\eigen-3.2.7\unsupported\test\..\..\Eigen;E:\Libraries\eigen-3.2.7\build\unsupported\test\..\..\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\unsupported\test;E:\Libraries\eigen-3.2.7\unsupported\test;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;E:\Libraries\eigen-3.2.7\unsupported\test\..\..\test;E:\Libraries\eigen-3.2.7\unsupported\test\..\..\unsupported;E:\Libraries\eigen-3.2.7\unsupported\test\..\..\Eigen;E:\Libraries\eigen-3.2.7\build\unsupported\test\..\..\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\unsupported\test;E:\Libraries\eigen-3.2.7\unsupported\test;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;E:\Libraries\eigen-3.2.7\unsupported\test\..\..\test;E:\Libraries\eigen-3.2.7\unsupported\test\..\..\unsupported;E:\Libraries\eigen-3.2.7\unsupported\test\..\..\Eigen;E:\Libraries\eigen-3.2.7\build\unsupported\test\..\..\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\unsupported\test;E:\Libraries\eigen-3.2.7\unsupported\test;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;E:\Libraries\eigen-3.2.7\unsupported\test\..\..\test;E:\Libraries\eigen-3.2.7\unsupported\test\..\..\unsupported;E:\Libraries\eigen-3.2.7\unsupported\test\..\..\Eigen;E:\Libraries\eigen-3.2.7\build\unsupported\test\..\..\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Libraries\eigen-3.2.7\unsupported\test\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/unsupported/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/unsupported/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\FindGLUT.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake;E:\Libraries\eigen-3.2.7\cmake\FindAdolc.cmake;E:\Libraries\eigen-3.2.7\cmake\FindFFTW.cmake;E:\Libraries\eigen-3.2.7\cmake\FindGLEW.cmake;E:\Libraries\eigen-3.2.7\cmake\FindGMP.cmake;E:\Libraries\eigen-3.2.7\cmake\FindGoogleHash.cmake;E:\Libraries\eigen-3.2.7\cmake\FindMPFR.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Libraries\eigen-3.2.7\build\unsupported\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/unsupported/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/unsupported/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\FindGLUT.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake;E:\Libraries\eigen-3.2.7\cmake\FindAdolc.cmake;E:\Libraries\eigen-3.2.7\cmake\FindFFTW.cmake;E:\Libraries\eigen-3.2.7\cmake\FindGLEW.cmake;E:\Libraries\eigen-3.2.7\cmake\FindGMP.cmake;E:\Libraries\eigen-3.2.7\cmake\FindGoogleHash.cmake;E:\Libraries\eigen-3.2.7\cmake\FindMPFR.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Libraries\eigen-3.2.7\build\unsupported\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/unsupported/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/unsupported/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\FindGLUT.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake;E:\Libraries\eigen-3.2.7\cmake\FindAdolc.cmake;E:\Libraries\eigen-3.2.7\cmake\FindFFTW.cmake;E:\Libraries\eigen-3.2.7\cmake\FindGLEW.cmake;E:\Libraries\eigen-3.2.7\cmake\FindGMP.cmake;E:\Libraries\eigen-3.2.7\cmake\FindGoogleHash.cmake;E:\Libraries\eigen-3.2.7\cmake\FindMPFR.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Libraries\eigen-3.2.7\build\unsupported\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/unsupported/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/unsupported/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\FindGLUT.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindOpenGL.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPkgConfig.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\SelectLibraryConfigurations.cmake;E:\Libraries\eigen-3.2.7\cmake\FindAdolc.cmake;E:\Libraries\eigen-3.2.7\cmake\FindFFTW.cmake;E:\Libraries\eigen-3.2.7\cmake\FindGLEW.cmake;E:\Libraries\eigen-3.2.7\cmake\FindGMP.cmake;E:\Libraries\eigen-3.2.7\cmake\FindGoogleHash.cmake;E:\Libraries\eigen-3.2.7\cmake\FindMPFR.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Libraries\eigen-3.2.7\build\unsupported\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\ZERO_CHECK.vcxproj">
+      <Project>{5A0F419D-A8CF-36D4-B15E-6C2C9DE04AB7}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\test\bdcsvd_1.vcxproj">
+      <Project>{30781C3A-F809-35CA-AAA6-02F05ABDD7F6}</Project>
+      <Name>bdcsvd_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\test\bdcsvd_11.vcxproj">
+      <Project>{F7E65C62-C6B1-3B2C-9BB0-87C58F445B58}</Project>
+      <Name>bdcsvd_11</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\test\bdcsvd_13.vcxproj">
+      <Project>{170BF213-3335-3C4F-AAF8-F8A7E43C893E}</Project>
+      <Name>bdcsvd_13</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\test\bdcsvd_14.vcxproj">
+      <Project>{21534730-FF77-332D-ADFB-37F149DB144E}</Project>
+      <Name>bdcsvd_14</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\test\bdcsvd_15.vcxproj">
+      <Project>{97BAAE00-FFC8-3FF6-98C1-947A93F9B07A}</Project>
+      <Name>bdcsvd_15</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\test\bdcsvd_16.vcxproj">
+      <Project>{B00673DC-A16B-36B8-8072-353616CC6220}</Project>
+      <Name>bdcsvd_16</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\test\bdcsvd_17.vcxproj">
+      <Project>{22D60BA1-C44D-3ED0-B4C0-B9290F04297B}</Project>
+      <Name>bdcsvd_17</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\test\bdcsvd_18.vcxproj">
+      <Project>{71B7248E-D1D0-34BA-A4F9-8B5D18864033}</Project>
+      <Name>bdcsvd_18</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\test\bdcsvd_2.vcxproj">
+      <Project>{CC4D75D2-6BDA-36E3-91EE-4E54C56665F0}</Project>
+      <Name>bdcsvd_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\test\bdcsvd_3.vcxproj">
+      <Project>{FF2A4F0D-8E53-3BBA-A9CC-85753D82542A}</Project>
+      <Name>bdcsvd_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\test\bdcsvd_4.vcxproj">
+      <Project>{08B8471A-8F27-3F5C-B4FC-2E588CEC1414}</Project>
+      <Name>bdcsvd_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\test\bdcsvd_5.vcxproj">
+      <Project>{99795045-0904-33FF-8366-9800745B4834}</Project>
+      <Name>bdcsvd_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\test\bdcsvd_7.vcxproj">
+      <Project>{7B5AA8C0-7D0F-383D-A289-69E8CC472C88}</Project>
+      <Name>bdcsvd_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\test\bdcsvd_8.vcxproj">
+      <Project>{5CE4C7A5-481F-3E26-BEEA-FFFA44F31679}</Project>
+      <Name>bdcsvd_8</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

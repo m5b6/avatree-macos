@@ -1,0 +1,412 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{898FA2DE-34CF-3955-9342-43F134B01530}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>all_examples</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\doc;E:\Libraries\eigen-3.2.7\doc;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\doc;E:\Libraries\eigen-3.2.7\doc;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\doc;E:\Libraries\eigen-3.2.7\doc;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\doc;E:\Libraries\eigen-3.2.7\doc;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Libraries\eigen-3.2.7\doc\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Libraries\eigen-3.2.7\doc\Doxyfile.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_footer.html.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_header.html.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_layout.xml.in;E:\Libraries\eigen-3.2.7\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Libraries\eigen-3.2.7\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Libraries\eigen-3.2.7\doc\Doxyfile.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_footer.html.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_header.html.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_layout.xml.in;E:\Libraries\eigen-3.2.7\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Libraries\eigen-3.2.7\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Libraries\eigen-3.2.7\doc\Doxyfile.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_footer.html.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_header.html.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_layout.xml.in;E:\Libraries\eigen-3.2.7\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Libraries\eigen-3.2.7\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Libraries\eigen-3.2.7\doc\Doxyfile.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_footer.html.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_header.html.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_layout.xml.in;E:\Libraries\eigen-3.2.7\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Libraries\eigen-3.2.7\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\ZERO_CHECK.vcxproj">
+      <Project>{5A0F419D-A8CF-36D4-B15E-6C2C9DE04AB7}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\DenseBase_middleCols_int.vcxproj">
+      <Project>{BFAEA548-2769-33E8-8561-44B8B0340F4C}</Project>
+      <Name>DenseBase_middleCols_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\DenseBase_middleRows_int.vcxproj">
+      <Project>{1975DAA3-D92A-300F-B705-44285485257E}</Project>
+      <Name>DenseBase_middleRows_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\DenseBase_template_int_middleCols.vcxproj">
+      <Project>{8DF77194-43AF-3642-B09F-E4983E2A84A8}</Project>
+      <Name>DenseBase_template_int_middleCols</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\DenseBase_template_int_middleRows.vcxproj">
+      <Project>{727BE30A-132E-35D6-94C1-79B986573ADA}</Project>
+      <Name>DenseBase_template_int_middleRows</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\MatrixBase_cwise_const.vcxproj">
+      <Project>{2769C632-D88B-3131-9FC0-23E8523AE43D}</Project>
+      <Name>MatrixBase_cwise_const</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\QuickStart_example.vcxproj">
+      <Project>{D6B0F006-DCAB-326B-8229-367C679F3DFC}</Project>
+      <Name>QuickStart_example</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\QuickStart_example2_dynamic.vcxproj">
+      <Project>{1B6AFF46-20E6-3393-97F8-3DC4ADE9926D}</Project>
+      <Name>QuickStart_example2_dynamic</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\QuickStart_example2_fixed.vcxproj">
+      <Project>{E48B919A-98C7-3DED-8AB7-2B59146BC159}</Project>
+      <Name>QuickStart_example2_fixed</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TemplateKeyword_flexible.vcxproj">
+      <Project>{534EAC96-EBFD-35D5-A82D-C5046A4E5237}</Project>
+      <Name>TemplateKeyword_flexible</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TemplateKeyword_simple.vcxproj">
+      <Project>{847F7BFA-5592-347E-B2C6-B0500B4A2A21}</Project>
+      <Name>TemplateKeyword_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TutorialLinAlgComputeTwice.vcxproj">
+      <Project>{A6EF9E60-80C8-3E13-BCD3-318C2BA25AFE}</Project>
+      <Name>TutorialLinAlgComputeTwice</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TutorialLinAlgExComputeSolveError.vcxproj">
+      <Project>{CE312327-76ED-3340-95E7-DC250E85B570}</Project>
+      <Name>TutorialLinAlgExComputeSolveError</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TutorialLinAlgExSolveColPivHouseholderQR.vcxproj">
+      <Project>{E0DA1B64-0E63-3EBE-A266-010672937FD3}</Project>
+      <Name>TutorialLinAlgExSolveColPivHouseholderQR</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TutorialLinAlgExSolveLDLT.vcxproj">
+      <Project>{2E042AAB-AA15-322B-845A-8A02ED64D386}</Project>
+      <Name>TutorialLinAlgExSolveLDLT</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TutorialLinAlgInverseDeterminant.vcxproj">
+      <Project>{54153253-0E85-3610-80E0-4E610792111A}</Project>
+      <Name>TutorialLinAlgInverseDeterminant</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TutorialLinAlgRankRevealing.vcxproj">
+      <Project>{A2733CFC-69C3-3AD3-B31B-E436587E9720}</Project>
+      <Name>TutorialLinAlgRankRevealing</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TutorialLinAlgSVDSolve.vcxproj">
+      <Project>{97331AF6-4AF3-3751-A756-B1D74D6D9478}</Project>
+      <Name>TutorialLinAlgSVDSolve</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TutorialLinAlgSelfAdjointEigenSolver.vcxproj">
+      <Project>{14326638-41C8-31AB-97CA-0C0D153FE294}</Project>
+      <Name>TutorialLinAlgSelfAdjointEigenSolver</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TutorialLinAlgSetThreshold.vcxproj">
+      <Project>{F0C34709-3140-3174-976D-FFE85220921D}</Project>
+      <Name>TutorialLinAlgSetThreshold</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ArrayClass_accessors.vcxproj">
+      <Project>{88FD6FFB-FCE2-31FD-9F0F-77A9D9EDC474}</Project>
+      <Name>Tutorial_ArrayClass_accessors</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ArrayClass_addition.vcxproj">
+      <Project>{65340C20-4007-3F45-9BEA-B7AA617BFEF4}</Project>
+      <Name>Tutorial_ArrayClass_addition</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ArrayClass_cwise_other.vcxproj">
+      <Project>{AFE044C2-EEC7-3D4B-AB59-2BBEEC9912E8}</Project>
+      <Name>Tutorial_ArrayClass_cwise_other</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ArrayClass_interop.vcxproj">
+      <Project>{9711D39F-160F-33C4-B57F-29BDF38D92FD}</Project>
+      <Name>Tutorial_ArrayClass_interop</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ArrayClass_interop_matrix.vcxproj">
+      <Project>{E8D794BB-B9AA-3903-98EF-0CC91D52FCD6}</Project>
+      <Name>Tutorial_ArrayClass_interop_matrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ArrayClass_mult.vcxproj">
+      <Project>{AD58049B-8837-3CA8-B568-DAA65AA14EEA}</Project>
+      <Name>Tutorial_ArrayClass_mult</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_BlockOperations_block_assignment.vcxproj">
+      <Project>{033556AF-DC1C-38FA-B8E2-CA90202946DA}</Project>
+      <Name>Tutorial_BlockOperations_block_assignment</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_BlockOperations_colrow.vcxproj">
+      <Project>{07FF9F78-3800-3370-9DB3-31ABD5B32924}</Project>
+      <Name>Tutorial_BlockOperations_colrow</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_BlockOperations_corner.vcxproj">
+      <Project>{C79AFDC5-665D-3EFF-9478-264E484202B1}</Project>
+      <Name>Tutorial_BlockOperations_corner</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_BlockOperations_print_block.vcxproj">
+      <Project>{42474177-FAAC-3203-89AC-3C556997BDBA}</Project>
+      <Name>Tutorial_BlockOperations_print_block</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_BlockOperations_vector.vcxproj">
+      <Project>{C05A0533-630A-3649-8A17-2F7B760DABDA}</Project>
+      <Name>Tutorial_BlockOperations_vector</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_PartialLU_solve.vcxproj">
+      <Project>{1B597F15-C032-3B43-823B-E2AE5802555F}</Project>
+      <Name>Tutorial_PartialLU_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_1nn.vcxproj">
+      <Project>{55788885-4460-3F9F-8955-3400898E02BE}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_1nn</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple.vcxproj">
+      <Project>{500A74CD-12A4-3B3F-B76C-AEF82D76EFC9}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple_rowwise.vcxproj">
+      <Project>{0CDBFE5A-A5F2-3CA4-A532-4605F22511F0}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple_rowwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_colwise.vcxproj">
+      <Project>{D4DC4ED9-28AA-355A-97E4-32D231EC17FA}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_colwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_maxnorm.vcxproj">
+      <Project>{34DDAE56-5165-3557-9508-D190BF9974A9}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_maxnorm</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_bool.vcxproj">
+      <Project>{B3444B9B-EDCE-3007-8377-FDDDB17F70F8}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_bool</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_norm.vcxproj">
+      <Project>{865B53E8-75CA-3CC0-87D1-F901AC486B3F}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_norm</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_rowwise.vcxproj">
+      <Project>{38C9EDF1-9912-3992-AAD8-772DA6765683}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_rowwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_visitors.vcxproj">
+      <Project>{574D92A5-15B7-30DB-A82C-D3BC7D334587}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_visitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_simple_example_dynamic_size.vcxproj">
+      <Project>{1F2A3DA4-9933-314B-A4B0-EB0B19746DF3}</Project>
+      <Name>Tutorial_simple_example_dynamic_size</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_simple_example_fixed_size.vcxproj">
+      <Project>{A6FFA18D-3164-3E50-BBB2-9081823B96EC}</Project>
+      <Name>Tutorial_simple_example_fixed_size</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\class_Block.vcxproj">
+      <Project>{90186353-7D90-3C7B-B29E-2661D8FC0C4D}</Project>
+      <Name>class_Block</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\class_CwiseBinaryOp.vcxproj">
+      <Project>{D339811F-5005-3B2D-B4DB-FDE00E64A34A}</Project>
+      <Name>class_CwiseBinaryOp</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\class_CwiseUnaryOp.vcxproj">
+      <Project>{FBA2AE6B-4EFE-373B-9AE0-DFDD987448FF}</Project>
+      <Name>class_CwiseUnaryOp</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\class_CwiseUnaryOp_ptrfun.vcxproj">
+      <Project>{9D3F7FC1-C303-3BA6-A17B-CBF77E55DE96}</Project>
+      <Name>class_CwiseUnaryOp_ptrfun</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\class_FixedBlock.vcxproj">
+      <Project>{E15ADE97-821C-3A09-A38A-216A8EDD5A11}</Project>
+      <Name>class_FixedBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\class_FixedVectorBlock.vcxproj">
+      <Project>{75069743-1416-39AB-8FF7-F068574C23FE}</Project>
+      <Name>class_FixedVectorBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\class_VectorBlock.vcxproj">
+      <Project>{8BAA4970-FE1E-392C-90FD-23088369279A}</Project>
+      <Name>class_VectorBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\function_taking_eigenbase.vcxproj">
+      <Project>{1DE05920-F660-333D-806D-FF0ED9181EDC}</Project>
+      <Name>function_taking_eigenbase</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\function_taking_ref.vcxproj">
+      <Project>{DCD5C7A1-A8F4-33D9-AEB9-EE7EAFFF3F9B}</Project>
+      <Name>function_taking_ref</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\tut_arithmetic_add_sub.vcxproj">
+      <Project>{D437801D-CEB5-3D98-85A9-942F7047F41B}</Project>
+      <Name>tut_arithmetic_add_sub</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\tut_arithmetic_dot_cross.vcxproj">
+      <Project>{C9FF9A4F-1345-38F6-B8A2-337C5984C830}</Project>
+      <Name>tut_arithmetic_dot_cross</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\tut_arithmetic_matrix_mul.vcxproj">
+      <Project>{133EFDAB-923F-3357-8350-715B7E6A0736}</Project>
+      <Name>tut_arithmetic_matrix_mul</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\tut_arithmetic_redux_basic.vcxproj">
+      <Project>{03FE1E6D-272A-326F-BA7C-AD54F75286B6}</Project>
+      <Name>tut_arithmetic_redux_basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\tut_arithmetic_scalar_mul_div.vcxproj">
+      <Project>{AF7E944F-D1ED-3259-9EA4-9805A261AF59}</Project>
+      <Name>tut_arithmetic_scalar_mul_div</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\tut_matrix_coefficient_accessors.vcxproj">
+      <Project>{B171A4D2-3C04-3543-A411-61CFD96CC6A6}</Project>
+      <Name>tut_matrix_coefficient_accessors</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\tut_matrix_resize.vcxproj">
+      <Project>{4A5A4AA3-3CFD-3248-B5E1-E59EBBB0E47E}</Project>
+      <Name>tut_matrix_resize</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\tut_matrix_resize_fixed_size.vcxproj">
+      <Project>{544A81F0-0AD4-3C6E-8111-389F2FFEDB0F}</Project>
+      <Name>tut_matrix_resize_fixed_size</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

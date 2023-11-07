@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6B2DA3EF-E7E7-3F36-9D98-DE0837AF9341}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>product_symm</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\test;E:\Libraries\eigen-3.2.7\test;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\test;E:\Libraries\eigen-3.2.7\test;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\test;E:\Libraries\eigen-3.2.7\test;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\test;E:\Libraries\eigen-3.2.7\test;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Libraries\eigen-3.2.7\test\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindQt4.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\MacroAddFileDependencies.cmake;E:\Libraries\eigen-3.2.7\cmake\FindCholmod.cmake;E:\Libraries\eigen-3.2.7\cmake\FindMetis.cmake;E:\Libraries\eigen-3.2.7\cmake\FindPastix.cmake;E:\Libraries\eigen-3.2.7\cmake\FindSPQR.cmake;E:\Libraries\eigen-3.2.7\cmake\FindScotch.cmake;E:\Libraries\eigen-3.2.7\cmake\FindSuperLU.cmake;E:\Libraries\eigen-3.2.7\cmake\FindUmfpack.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Libraries\eigen-3.2.7\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindQt4.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\MacroAddFileDependencies.cmake;E:\Libraries\eigen-3.2.7\cmake\FindCholmod.cmake;E:\Libraries\eigen-3.2.7\cmake\FindMetis.cmake;E:\Libraries\eigen-3.2.7\cmake\FindPastix.cmake;E:\Libraries\eigen-3.2.7\cmake\FindSPQR.cmake;E:\Libraries\eigen-3.2.7\cmake\FindScotch.cmake;E:\Libraries\eigen-3.2.7\cmake\FindSuperLU.cmake;E:\Libraries\eigen-3.2.7\cmake\FindUmfpack.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Libraries\eigen-3.2.7\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindQt4.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\MacroAddFileDependencies.cmake;E:\Libraries\eigen-3.2.7\cmake\FindCholmod.cmake;E:\Libraries\eigen-3.2.7\cmake\FindMetis.cmake;E:\Libraries\eigen-3.2.7\cmake\FindPastix.cmake;E:\Libraries\eigen-3.2.7\cmake\FindSPQR.cmake;E:\Libraries\eigen-3.2.7\cmake\FindScotch.cmake;E:\Libraries\eigen-3.2.7\cmake\FindSuperLU.cmake;E:\Libraries\eigen-3.2.7\cmake\FindUmfpack.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Libraries\eigen-3.2.7\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/test/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.18\Modules\CMakePushCheckState.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\CheckCXXSymbolExists.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\FindQt4.cmake;C:\Program Files\CMake\share\cmake-3.18\Modules\MacroAddFileDependencies.cmake;E:\Libraries\eigen-3.2.7\cmake\FindCholmod.cmake;E:\Libraries\eigen-3.2.7\cmake\FindMetis.cmake;E:\Libraries\eigen-3.2.7\cmake\FindPastix.cmake;E:\Libraries\eigen-3.2.7\cmake\FindSPQR.cmake;E:\Libraries\eigen-3.2.7\cmake\FindScotch.cmake;E:\Libraries\eigen-3.2.7\cmake\FindSuperLU.cmake;E:\Libraries\eigen-3.2.7\cmake\FindUmfpack.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Libraries\eigen-3.2.7\build\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\ZERO_CHECK.vcxproj">
+      <Project>{5A0F419D-A8CF-36D4-B15E-6C2C9DE04AB7}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\test\product_symm_1.vcxproj">
+      <Project>{D5A6A071-0F5A-3613-B5FF-F0C417A76AAC}</Project>
+      <Name>product_symm_1</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\test\product_symm_2.vcxproj">
+      <Project>{6D1FCBF0-E306-30AE-8516-552E463478E1}</Project>
+      <Name>product_symm_2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\test\product_symm_3.vcxproj">
+      <Project>{5CD6E211-6E60-3DD0-BBE9-F6EE8FB6A2FD}</Project>
+      <Name>product_symm_3</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\test\product_symm_4.vcxproj">
+      <Project>{AD9551B3-9586-3E61-A7DC-F3A77DD7EAAA}</Project>
+      <Name>product_symm_4</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\test\product_symm_5.vcxproj">
+      <Project>{A5376569-CC88-3C70-A451-CCF299309A3E}</Project>
+      <Name>product_symm_5</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\test\product_symm_6.vcxproj">
+      <Project>{802913E7-3CEC-3FC7-B5EE-714865259C3C}</Project>
+      <Name>product_symm_6</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\test\product_symm_7.vcxproj">
+      <Project>{AE2EEB3E-0A79-3AEB-8A21-BE13308B823D}</Project>
+      <Name>product_symm_7</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\test\product_symm_8.vcxproj">
+      <Project>{2DFD3D38-106A-39AB-BF91-CB29A8F1C3C2}</Project>
+      <Name>product_symm_8</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

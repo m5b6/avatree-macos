@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EC920B5D-E5DF-33A6-B984-33605E9BE8FB}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>unsupported_examples</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples;E:\Libraries\eigen-3.2.7\unsupported\doc\examples;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;E:\Libraries\eigen-3.2.7\unsupported\doc\examples\..\..\..\unsupported;E:\Libraries\eigen-3.2.7\unsupported\doc\examples\..\..\..\unsupported\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples;E:\Libraries\eigen-3.2.7\unsupported\doc\examples;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;E:\Libraries\eigen-3.2.7\unsupported\doc\examples\..\..\..\unsupported;E:\Libraries\eigen-3.2.7\unsupported\doc\examples\..\..\..\unsupported\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples;E:\Libraries\eigen-3.2.7\unsupported\doc\examples;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;E:\Libraries\eigen-3.2.7\unsupported\doc\examples\..\..\..\unsupported;E:\Libraries\eigen-3.2.7\unsupported\doc\examples\..\..\..\unsupported\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples;E:\Libraries\eigen-3.2.7\unsupported\doc\examples;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;E:\Libraries\eigen-3.2.7\unsupported\doc\examples\..\..\..\unsupported;E:\Libraries\eigen-3.2.7\unsupported\doc\examples\..\..\..\unsupported\test;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Libraries\eigen-3.2.7\unsupported\doc\examples\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/unsupported/doc/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/unsupported/doc/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/unsupported/doc/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/unsupported/doc/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/unsupported/doc/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/unsupported/doc/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/unsupported/doc/examples/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/unsupported/doc/examples/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\ZERO_CHECK.vcxproj">
+      <Project>{5A0F419D-A8CF-36D4-B15E-6C2C9DE04AB7}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples\example_BVH_Example.vcxproj">
+      <Project>{D7DBF91F-978F-3931-A198-A46C6DC9BE13}</Project>
+      <Name>example_BVH_Example</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples\example_FFT.vcxproj">
+      <Project>{AF59B83F-B99B-3C89-AA4B-89017C95C485}</Project>
+      <Name>example_FFT</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples\example_MatrixExponential.vcxproj">
+      <Project>{F994E7AD-F703-313F-A372-AC0527EDDBE0}</Project>
+      <Name>example_MatrixExponential</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples\example_MatrixFunction.vcxproj">
+      <Project>{AD6AE958-27A1-30DE-8A38-621016DBF244}</Project>
+      <Name>example_MatrixFunction</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples\example_MatrixLogarithm.vcxproj">
+      <Project>{547F677A-01BB-3860-9F41-F5E860A90D94}</Project>
+      <Name>example_MatrixLogarithm</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples\example_MatrixPower.vcxproj">
+      <Project>{2BBF29E2-DA9B-31FC-A32E-F11556A9F38C}</Project>
+      <Name>example_MatrixPower</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples\example_MatrixPower_optimal.vcxproj">
+      <Project>{1A1284AB-5DF1-363B-B03B-CAA3EF1AED73}</Project>
+      <Name>example_MatrixPower_optimal</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples\example_MatrixSine.vcxproj">
+      <Project>{93EA866A-63F4-39F6-9C68-D7E04F81F919}</Project>
+      <Name>example_MatrixSine</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples\example_MatrixSinh.vcxproj">
+      <Project>{244B98FE-86F5-3406-9B11-CB1116526A33}</Project>
+      <Name>example_MatrixSinh</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples\example_MatrixSquareRoot.vcxproj">
+      <Project>{495E79F9-B986-36F0-9A91-049437A2BBE4}</Project>
+      <Name>example_MatrixSquareRoot</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples\example_PolynomialSolver1.vcxproj">
+      <Project>{50B28679-3FC9-3922-8050-AE53F27375C2}</Project>
+      <Name>example_PolynomialSolver1</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\unsupported\doc\examples\example_PolynomialUtils1.vcxproj">
+      <Project>{8DC95319-E179-357F-AA63-313E9B36EAAF}</Project>
+      <Name>example_PolynomialUtils1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

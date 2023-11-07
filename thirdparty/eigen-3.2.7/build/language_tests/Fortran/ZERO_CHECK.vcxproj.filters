@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="E:\Libraries\eigen-3.2.7\build\language_tests\Fortran\CMakeFiles\12a8d8b524a8a58914dab6c931e97a7c\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{745AB82C-B985-391F-9BE9-16213A18EC26}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

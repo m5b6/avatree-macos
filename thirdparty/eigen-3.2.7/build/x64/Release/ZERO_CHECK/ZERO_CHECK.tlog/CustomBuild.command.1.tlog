@@ -1,0 +1,10 @@
+^E:\LIBRARIES\EIGEN-3.2.7\BUILD\CMAKEFILES\D0CE1B2F81B243EBD1B135F22623687A\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Libraries/eigen-3.2.7/build/Eigen.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

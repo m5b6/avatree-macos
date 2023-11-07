@@ -1,0 +1,1378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D8299D71-5154-3C59-9957-6C096110615C}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\doc;E:\Libraries\eigen-3.2.7\doc;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\doc;E:\Libraries\eigen-3.2.7\doc;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\doc;E:\Libraries\eigen-3.2.7\doc;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>E:\Libraries\eigen-3.2.7\build\doc;E:\Libraries\eigen-3.2.7\doc;E:\Libraries\eigen-3.2.7;E:\Libraries\eigen-3.2.7\build;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\Libraries\eigen-3.2.7\doc\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Libraries\eigen-3.2.7\doc\Doxyfile.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_footer.html.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_header.html.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_layout.xml.in;E:\Libraries\eigen-3.2.7\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Libraries\eigen-3.2.7\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Libraries\eigen-3.2.7\doc\Doxyfile.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_footer.html.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_header.html.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_layout.xml.in;E:\Libraries\eigen-3.2.7\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Libraries\eigen-3.2.7\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Libraries\eigen-3.2.7\doc\Doxyfile.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_footer.html.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_header.html.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_layout.xml.in;E:\Libraries\eigen-3.2.7\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Libraries\eigen-3.2.7\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/Libraries/eigen-3.2.7/doc/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Libraries/eigen-3.2.7 -BE:/Libraries/eigen-3.2.7/build --check-stamp-file E:/Libraries/eigen-3.2.7/build/doc/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Libraries\eigen-3.2.7\doc\Doxyfile.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_footer.html.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_header.html.in;E:\Libraries\eigen-3.2.7\doc\eigendoxy_layout.xml.in;E:\Libraries\eigen-3.2.7\unsupported\doc\eigendoxy_layout.xml.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Libraries\eigen-3.2.7\build\doc\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\ZERO_CHECK.vcxproj">
+      <Project>{5A0F419D-A8CF-36D4-B15E-6C2C9DE04AB7}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\DenseBase_middleCols_int.vcxproj">
+      <Project>{BFAEA548-2769-33E8-8561-44B8B0340F4C}</Project>
+      <Name>DenseBase_middleCols_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\DenseBase_middleRows_int.vcxproj">
+      <Project>{1975DAA3-D92A-300F-B705-44285485257E}</Project>
+      <Name>DenseBase_middleRows_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\DenseBase_template_int_middleCols.vcxproj">
+      <Project>{8DF77194-43AF-3642-B09F-E4983E2A84A8}</Project>
+      <Name>DenseBase_template_int_middleCols</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\DenseBase_template_int_middleRows.vcxproj">
+      <Project>{727BE30A-132E-35D6-94C1-79B986573ADA}</Project>
+      <Name>DenseBase_template_int_middleRows</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\MatrixBase_cwise_const.vcxproj">
+      <Project>{2769C632-D88B-3131-9FC0-23E8523AE43D}</Project>
+      <Name>MatrixBase_cwise_const</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\QuickStart_example.vcxproj">
+      <Project>{D6B0F006-DCAB-326B-8229-367C679F3DFC}</Project>
+      <Name>QuickStart_example</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\QuickStart_example2_dynamic.vcxproj">
+      <Project>{1B6AFF46-20E6-3393-97F8-3DC4ADE9926D}</Project>
+      <Name>QuickStart_example2_dynamic</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\QuickStart_example2_fixed.vcxproj">
+      <Project>{E48B919A-98C7-3DED-8AB7-2B59146BC159}</Project>
+      <Name>QuickStart_example2_fixed</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TemplateKeyword_flexible.vcxproj">
+      <Project>{534EAC96-EBFD-35D5-A82D-C5046A4E5237}</Project>
+      <Name>TemplateKeyword_flexible</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TemplateKeyword_simple.vcxproj">
+      <Project>{847F7BFA-5592-347E-B2C6-B0500B4A2A21}</Project>
+      <Name>TemplateKeyword_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TutorialLinAlgComputeTwice.vcxproj">
+      <Project>{A6EF9E60-80C8-3E13-BCD3-318C2BA25AFE}</Project>
+      <Name>TutorialLinAlgComputeTwice</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TutorialLinAlgExComputeSolveError.vcxproj">
+      <Project>{CE312327-76ED-3340-95E7-DC250E85B570}</Project>
+      <Name>TutorialLinAlgExComputeSolveError</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TutorialLinAlgExSolveColPivHouseholderQR.vcxproj">
+      <Project>{E0DA1B64-0E63-3EBE-A266-010672937FD3}</Project>
+      <Name>TutorialLinAlgExSolveColPivHouseholderQR</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TutorialLinAlgExSolveLDLT.vcxproj">
+      <Project>{2E042AAB-AA15-322B-845A-8A02ED64D386}</Project>
+      <Name>TutorialLinAlgExSolveLDLT</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TutorialLinAlgInverseDeterminant.vcxproj">
+      <Project>{54153253-0E85-3610-80E0-4E610792111A}</Project>
+      <Name>TutorialLinAlgInverseDeterminant</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TutorialLinAlgRankRevealing.vcxproj">
+      <Project>{A2733CFC-69C3-3AD3-B31B-E436587E9720}</Project>
+      <Name>TutorialLinAlgRankRevealing</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TutorialLinAlgSVDSolve.vcxproj">
+      <Project>{97331AF6-4AF3-3751-A756-B1D74D6D9478}</Project>
+      <Name>TutorialLinAlgSVDSolve</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TutorialLinAlgSelfAdjointEigenSolver.vcxproj">
+      <Project>{14326638-41C8-31AB-97CA-0C0D153FE294}</Project>
+      <Name>TutorialLinAlgSelfAdjointEigenSolver</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\TutorialLinAlgSetThreshold.vcxproj">
+      <Project>{F0C34709-3140-3174-976D-FFE85220921D}</Project>
+      <Name>TutorialLinAlgSetThreshold</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ArrayClass_accessors.vcxproj">
+      <Project>{88FD6FFB-FCE2-31FD-9F0F-77A9D9EDC474}</Project>
+      <Name>Tutorial_ArrayClass_accessors</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ArrayClass_addition.vcxproj">
+      <Project>{65340C20-4007-3F45-9BEA-B7AA617BFEF4}</Project>
+      <Name>Tutorial_ArrayClass_addition</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ArrayClass_cwise_other.vcxproj">
+      <Project>{AFE044C2-EEC7-3D4B-AB59-2BBEEC9912E8}</Project>
+      <Name>Tutorial_ArrayClass_cwise_other</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ArrayClass_interop.vcxproj">
+      <Project>{9711D39F-160F-33C4-B57F-29BDF38D92FD}</Project>
+      <Name>Tutorial_ArrayClass_interop</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ArrayClass_interop_matrix.vcxproj">
+      <Project>{E8D794BB-B9AA-3903-98EF-0CC91D52FCD6}</Project>
+      <Name>Tutorial_ArrayClass_interop_matrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ArrayClass_mult.vcxproj">
+      <Project>{AD58049B-8837-3CA8-B568-DAA65AA14EEA}</Project>
+      <Name>Tutorial_ArrayClass_mult</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_BlockOperations_block_assignment.vcxproj">
+      <Project>{033556AF-DC1C-38FA-B8E2-CA90202946DA}</Project>
+      <Name>Tutorial_BlockOperations_block_assignment</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_BlockOperations_colrow.vcxproj">
+      <Project>{07FF9F78-3800-3370-9DB3-31ABD5B32924}</Project>
+      <Name>Tutorial_BlockOperations_colrow</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_BlockOperations_corner.vcxproj">
+      <Project>{C79AFDC5-665D-3EFF-9478-264E484202B1}</Project>
+      <Name>Tutorial_BlockOperations_corner</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_BlockOperations_print_block.vcxproj">
+      <Project>{42474177-FAAC-3203-89AC-3C556997BDBA}</Project>
+      <Name>Tutorial_BlockOperations_print_block</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_BlockOperations_vector.vcxproj">
+      <Project>{C05A0533-630A-3649-8A17-2F7B760DABDA}</Project>
+      <Name>Tutorial_BlockOperations_vector</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_PartialLU_solve.vcxproj">
+      <Project>{1B597F15-C032-3B43-823B-E2AE5802555F}</Project>
+      <Name>Tutorial_PartialLU_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_1nn.vcxproj">
+      <Project>{55788885-4460-3F9F-8955-3400898E02BE}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_1nn</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple.vcxproj">
+      <Project>{500A74CD-12A4-3B3F-B76C-AEF82D76EFC9}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple_rowwise.vcxproj">
+      <Project>{0CDBFE5A-A5F2-3CA4-A532-4605F22511F0}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_broadcast_simple_rowwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_colwise.vcxproj">
+      <Project>{D4DC4ED9-28AA-355A-97E4-32D231EC17FA}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_colwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_maxnorm.vcxproj">
+      <Project>{34DDAE56-5165-3557-9508-D190BF9974A9}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_maxnorm</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_bool.vcxproj">
+      <Project>{B3444B9B-EDCE-3007-8377-FDDDB17F70F8}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_bool</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_reductions_norm.vcxproj">
+      <Project>{865B53E8-75CA-3CC0-87D1-F901AC486B3F}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_reductions_norm</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_rowwise.vcxproj">
+      <Project>{38C9EDF1-9912-3992-AAD8-772DA6765683}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_rowwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_ReductionsVisitorsBroadcasting_visitors.vcxproj">
+      <Project>{574D92A5-15B7-30DB-A82C-D3BC7D334587}</Project>
+      <Name>Tutorial_ReductionsVisitorsBroadcasting_visitors</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_simple_example_dynamic_size.vcxproj">
+      <Project>{1F2A3DA4-9933-314B-A4B0-EB0B19746DF3}</Project>
+      <Name>Tutorial_simple_example_dynamic_size</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\Tutorial_simple_example_fixed_size.vcxproj">
+      <Project>{A6FFA18D-3164-3E50-BBB2-9081823B96EC}</Project>
+      <Name>Tutorial_simple_example_fixed_size</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\class_Block.vcxproj">
+      <Project>{90186353-7D90-3C7B-B29E-2661D8FC0C4D}</Project>
+      <Name>class_Block</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\class_CwiseBinaryOp.vcxproj">
+      <Project>{D339811F-5005-3B2D-B4DB-FDE00E64A34A}</Project>
+      <Name>class_CwiseBinaryOp</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\class_CwiseUnaryOp.vcxproj">
+      <Project>{FBA2AE6B-4EFE-373B-9AE0-DFDD987448FF}</Project>
+      <Name>class_CwiseUnaryOp</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\class_CwiseUnaryOp_ptrfun.vcxproj">
+      <Project>{9D3F7FC1-C303-3BA6-A17B-CBF77E55DE96}</Project>
+      <Name>class_CwiseUnaryOp_ptrfun</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\class_FixedBlock.vcxproj">
+      <Project>{E15ADE97-821C-3A09-A38A-216A8EDD5A11}</Project>
+      <Name>class_FixedBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\class_FixedVectorBlock.vcxproj">
+      <Project>{75069743-1416-39AB-8FF7-F068574C23FE}</Project>
+      <Name>class_FixedVectorBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\class_VectorBlock.vcxproj">
+      <Project>{8BAA4970-FE1E-392C-90FD-23088369279A}</Project>
+      <Name>class_VectorBlock</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_AngleAxis_mimic_euler.vcxproj">
+      <Project>{F45BB309-6F40-3C0A-9E72-E1853E30629C}</Project>
+      <Name>compile_AngleAxis_mimic_euler</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_ColPivHouseholderQR_solve.vcxproj">
+      <Project>{0CDB98A6-C63A-33DD-959A-D2A3283D7BCA}</Project>
+      <Name>compile_ColPivHouseholderQR_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_ComplexEigenSolver_compute.vcxproj">
+      <Project>{0006A8D9-584B-33CA-98A8-BF68BF99DE62}</Project>
+      <Name>compile_ComplexEigenSolver_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_ComplexEigenSolver_eigenvalues.vcxproj">
+      <Project>{34DA6B40-2D27-303B-8F53-FEFF9C64F5B4}</Project>
+      <Name>compile_ComplexEigenSolver_eigenvalues</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_ComplexEigenSolver_eigenvectors.vcxproj">
+      <Project>{BB89BA7C-93A5-34D9-BC12-923D915A6710}</Project>
+      <Name>compile_ComplexEigenSolver_eigenvectors</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_ComplexSchur_compute.vcxproj">
+      <Project>{AA916EC2-2DB9-3281-8A15-5FAF5B800BF9}</Project>
+      <Name>compile_ComplexSchur_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_ComplexSchur_matrixT.vcxproj">
+      <Project>{D0282ABC-F52B-3310-B801-A33509AD8DDC}</Project>
+      <Name>compile_ComplexSchur_matrixT</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_ComplexSchur_matrixU.vcxproj">
+      <Project>{C7831C27-755B-3FB9-862C-A04668551FFE}</Project>
+      <Name>compile_ComplexSchur_matrixU</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_abs.vcxproj">
+      <Project>{71BB9EAB-CA7B-33BB-AF98-B2467B91F7FE}</Project>
+      <Name>compile_Cwise_abs</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_abs2.vcxproj">
+      <Project>{62672DCC-10C7-3F03-BB77-04B42EA8BC99}</Project>
+      <Name>compile_Cwise_abs2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_acos.vcxproj">
+      <Project>{7C4AACF4-521E-3D72-9F0C-A86147019131}</Project>
+      <Name>compile_Cwise_acos</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_asin.vcxproj">
+      <Project>{79410EE2-381B-35E1-97C6-18B2EDE35803}</Project>
+      <Name>compile_Cwise_asin</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_boolean_and.vcxproj">
+      <Project>{E277B541-006B-39A8-B37A-BFC534000A10}</Project>
+      <Name>compile_Cwise_boolean_and</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_boolean_or.vcxproj">
+      <Project>{342318AE-549C-3122-9AAE-D9856D133143}</Project>
+      <Name>compile_Cwise_boolean_or</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_cos.vcxproj">
+      <Project>{6C9CD151-B6F1-3C95-A95A-79812364E08E}</Project>
+      <Name>compile_Cwise_cos</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_cube.vcxproj">
+      <Project>{9595383D-989D-3F98-A032-04226CD0AB95}</Project>
+      <Name>compile_Cwise_cube</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_equal_equal.vcxproj">
+      <Project>{4578A6A0-5DE1-3DC9-B7AB-2E3BA1088117}</Project>
+      <Name>compile_Cwise_equal_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_exp.vcxproj">
+      <Project>{E9EDF4F4-2CA2-3F21-8D85-E934979310F5}</Project>
+      <Name>compile_Cwise_exp</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_greater.vcxproj">
+      <Project>{1A599CB8-D82E-3A62-9945-501B340FA50A}</Project>
+      <Name>compile_Cwise_greater</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_greater_equal.vcxproj">
+      <Project>{A40B53B5-5C2F-31E4-B493-C187AD27A221}</Project>
+      <Name>compile_Cwise_greater_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_inverse.vcxproj">
+      <Project>{2F3C0902-10F0-3E46-9ECC-7A6176292E30}</Project>
+      <Name>compile_Cwise_inverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_less.vcxproj">
+      <Project>{EC4C5067-00DC-331E-B752-96035AA91546}</Project>
+      <Name>compile_Cwise_less</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_less_equal.vcxproj">
+      <Project>{5D8469EB-0210-3593-9347-EE0D424794AA}</Project>
+      <Name>compile_Cwise_less_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_log.vcxproj">
+      <Project>{A7C0D871-5F55-34BC-9FF3-6E137E35689A}</Project>
+      <Name>compile_Cwise_log</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_max.vcxproj">
+      <Project>{F5486DC8-DC1B-30D6-88A1-A5BE7564E8AD}</Project>
+      <Name>compile_Cwise_max</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_min.vcxproj">
+      <Project>{E768B616-C067-3BF5-A634-1A7FB7C59389}</Project>
+      <Name>compile_Cwise_min</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_minus.vcxproj">
+      <Project>{34DB16D5-1DBF-3D62-9B2E-5E3A92D2B428}</Project>
+      <Name>compile_Cwise_minus</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_minus_equal.vcxproj">
+      <Project>{BC9AED5F-E772-36F9-B291-91F2EE5A6A10}</Project>
+      <Name>compile_Cwise_minus_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_not_equal.vcxproj">
+      <Project>{1EFD4A5D-DF67-305B-A705-0F46C8A66D23}</Project>
+      <Name>compile_Cwise_not_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_plus.vcxproj">
+      <Project>{0DD084CF-416F-3424-9A5B-1EBE2573CA7E}</Project>
+      <Name>compile_Cwise_plus</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_plus_equal.vcxproj">
+      <Project>{EB1C921B-1E8E-3866-9881-7260ACBFE572}</Project>
+      <Name>compile_Cwise_plus_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_pow.vcxproj">
+      <Project>{943F208B-D059-356A-94B1-1435EAAAAED4}</Project>
+      <Name>compile_Cwise_pow</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_product.vcxproj">
+      <Project>{F14285E9-0336-3061-918E-E0FF3E72319E}</Project>
+      <Name>compile_Cwise_product</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_quotient.vcxproj">
+      <Project>{4678DBD5-E464-3955-91D1-F2982B06D383}</Project>
+      <Name>compile_Cwise_quotient</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_sin.vcxproj">
+      <Project>{AF2D97E0-98F2-3DDA-B6FC-550FBE2AFBC0}</Project>
+      <Name>compile_Cwise_sin</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_slash_equal.vcxproj">
+      <Project>{E6CD18E0-AB1C-3955-8CA7-C3DCEAD1617F}</Project>
+      <Name>compile_Cwise_slash_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_sqrt.vcxproj">
+      <Project>{9C196A06-1D44-338C-99E7-AED8E1C98330}</Project>
+      <Name>compile_Cwise_sqrt</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_square.vcxproj">
+      <Project>{B8406CBC-54F9-3AE4-8ED9-85B3ED43D3F3}</Project>
+      <Name>compile_Cwise_square</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_tan.vcxproj">
+      <Project>{F1D4F77A-6E44-3D47-A15F-E8045215D179}</Project>
+      <Name>compile_Cwise_tan</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Cwise_times_equal.vcxproj">
+      <Project>{D2B62BFA-4B36-36D3-9F16-A450C2A346A0}</Project>
+      <Name>compile_Cwise_times_equal</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_DenseBase_LinSpaced.vcxproj">
+      <Project>{652F5177-9941-3567-B69E-65E300C1D6D7}</Project>
+      <Name>compile_DenseBase_LinSpaced</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_DenseBase_LinSpaced_seq.vcxproj">
+      <Project>{F674E41A-9986-36BB-B42E-130E7A52898A}</Project>
+      <Name>compile_DenseBase_LinSpaced_seq</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_DenseBase_setLinSpaced.vcxproj">
+      <Project>{1D86AE5A-C448-30BF-9C6A-695B37CAE685}</Project>
+      <Name>compile_DenseBase_setLinSpaced</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_DirectionWise_replicate.vcxproj">
+      <Project>{BE5A53BC-3933-3F72-818E-61B20FC72B82}</Project>
+      <Name>compile_DirectionWise_replicate</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_DirectionWise_replicate_int.vcxproj">
+      <Project>{95146C6A-C850-3781-A1CA-6E17DD7DFD6C}</Project>
+      <Name>compile_DirectionWise_replicate_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_EigenSolver_EigenSolver_MatrixType.vcxproj">
+      <Project>{A5ADA105-D8E1-3D7C-99DC-A6BA5EB11189}</Project>
+      <Name>compile_EigenSolver_EigenSolver_MatrixType</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_EigenSolver_compute.vcxproj">
+      <Project>{E75F3F1E-7AA5-3F87-9649-54E2D6EF1E93}</Project>
+      <Name>compile_EigenSolver_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_EigenSolver_eigenvalues.vcxproj">
+      <Project>{765E6B76-EE11-39DF-9769-E5A4911BBEA0}</Project>
+      <Name>compile_EigenSolver_eigenvalues</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_EigenSolver_eigenvectors.vcxproj">
+      <Project>{39948190-8549-3716-9821-B2433EB3FA07}</Project>
+      <Name>compile_EigenSolver_eigenvectors</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_EigenSolver_pseudoEigenvectors.vcxproj">
+      <Project>{3BFCB39F-718A-3A74-B24C-1F413AC037CE}</Project>
+      <Name>compile_EigenSolver_pseudoEigenvectors</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_FullPivHouseholderQR_solve.vcxproj">
+      <Project>{A26BC7B4-EBB5-3F4F-B700-FE5238FF56C5}</Project>
+      <Name>compile_FullPivHouseholderQR_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_FullPivLU_image.vcxproj">
+      <Project>{AB5401E9-80F3-3C79-B641-F28D66217A29}</Project>
+      <Name>compile_FullPivLU_image</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_FullPivLU_kernel.vcxproj">
+      <Project>{7EE0DB32-820E-3C2A-870C-B520ACA00595}</Project>
+      <Name>compile_FullPivLU_kernel</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_FullPivLU_solve.vcxproj">
+      <Project>{C3220ED6-3E05-3392-9130-56573E6F60A3}</Project>
+      <Name>compile_FullPivLU_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_GeneralizedEigenSolver.vcxproj">
+      <Project>{60533717-3728-3570-B3EE-13D6ECAC14E0}</Project>
+      <Name>compile_GeneralizedEigenSolver</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_HessenbergDecomposition_compute.vcxproj">
+      <Project>{CDE65AC1-9284-3595-854F-405797CD46EC}</Project>
+      <Name>compile_HessenbergDecomposition_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_HessenbergDecomposition_matrixH.vcxproj">
+      <Project>{E151E40E-E234-37DD-97BE-36AC290EE3EE}</Project>
+      <Name>compile_HessenbergDecomposition_matrixH</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_HessenbergDecomposition_packedMatrix.vcxproj">
+      <Project>{A8CA1F7E-2FCA-3163-9975-4A9B1D5634FD}</Project>
+      <Name>compile_HessenbergDecomposition_packedMatrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_HouseholderQR_householderQ.vcxproj">
+      <Project>{B754F234-FE04-3EB7-A880-6C46B574F595}</Project>
+      <Name>compile_HouseholderQR_householderQ</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_HouseholderQR_solve.vcxproj">
+      <Project>{702D17D7-B528-37D0-A928-19D851DB8EFB}</Project>
+      <Name>compile_HouseholderQR_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_HouseholderSequence_HouseholderSequence.vcxproj">
+      <Project>{0FA9617A-A917-3C30-A839-D97C8728E501}</Project>
+      <Name>compile_HouseholderSequence_HouseholderSequence</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_IOFormat.vcxproj">
+      <Project>{9B3E2D70-DAC7-393C-B9C5-482D8D10837A}</Project>
+      <Name>compile_IOFormat</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_JacobiSVD_basic.vcxproj">
+      <Project>{3CEB2D89-FEE9-3B80-824D-63AAED87395A}</Project>
+      <Name>compile_JacobiSVD_basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Jacobi_makeGivens.vcxproj">
+      <Project>{E035B332-03B4-3AE4-B655-CBE5B284EC97}</Project>
+      <Name>compile_Jacobi_makeGivens</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Jacobi_makeJacobi.vcxproj">
+      <Project>{9AC4D8AC-DF82-3B6E-9CB9-152EEC163DC5}</Project>
+      <Name>compile_Jacobi_makeJacobi</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_LLT_example.vcxproj">
+      <Project>{33A46751-9367-365D-BA6A-81A8F3A79596}</Project>
+      <Name>compile_LLT_example</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_LLT_solve.vcxproj">
+      <Project>{EEEB1191-6167-3520-B8BA-1840752AAB7E}</Project>
+      <Name>compile_LLT_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Map_general_stride.vcxproj">
+      <Project>{9F7B0D7B-5C5C-3CFA-97D5-9981B76199BC}</Project>
+      <Name>compile_Map_general_stride</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Map_inner_stride.vcxproj">
+      <Project>{C3B6294D-30D6-3F3D-8351-7D2BDA6482A8}</Project>
+      <Name>compile_Map_inner_stride</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Map_outer_stride.vcxproj">
+      <Project>{D30925B1-E397-331C-9400-03D5C031E575}</Project>
+      <Name>compile_Map_outer_stride</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Map_placement_new.vcxproj">
+      <Project>{9B756AA5-A061-3833-AC6A-4D082A04CE3D}</Project>
+      <Name>compile_Map_placement_new</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Map_simple.vcxproj">
+      <Project>{A2DC4E7A-8B6A-3A20-88C4-A24B1A23EB97}</Project>
+      <Name>compile_Map_simple</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_adjoint.vcxproj">
+      <Project>{12528C0D-CC09-392A-8E77-B67A2D9A712D}</Project>
+      <Name>compile_MatrixBase_adjoint</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_all.vcxproj">
+      <Project>{2AA64084-53C3-388A-89F8-1773DAC4413C}</Project>
+      <Name>compile_MatrixBase_all</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_applyOnTheLeft.vcxproj">
+      <Project>{00C61608-4F1A-334F-B44A-129EBE65AAD4}</Project>
+      <Name>compile_MatrixBase_applyOnTheLeft</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_applyOnTheRight.vcxproj">
+      <Project>{A19DD346-6129-39C4-91DC-2A3AC51411E8}</Project>
+      <Name>compile_MatrixBase_applyOnTheRight</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_array.vcxproj">
+      <Project>{7F034946-9A8F-3B55-B483-4912D2317828}</Project>
+      <Name>compile_MatrixBase_array</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_array_const.vcxproj">
+      <Project>{C2FADDD8-4E50-3AC7-91FB-A9DBD4BAB725}</Project>
+      <Name>compile_MatrixBase_array_const</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_asDiagonal.vcxproj">
+      <Project>{C1D98457-09C7-3841-9018-649313BA71D1}</Project>
+      <Name>compile_MatrixBase_asDiagonal</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_block_int_int.vcxproj">
+      <Project>{E4CA9E1A-5760-3E01-A678-02ABED3BB110}</Project>
+      <Name>compile_MatrixBase_block_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_block_int_int_int_int.vcxproj">
+      <Project>{6DE614DE-9951-36F1-BB62-DD4540DD7A4B}</Project>
+      <Name>compile_MatrixBase_block_int_int_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_bottomLeftCorner_int_int.vcxproj">
+      <Project>{10D7F921-701D-3F63-AAA4-7E84E8CDE17E}</Project>
+      <Name>compile_MatrixBase_bottomLeftCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_bottomRightCorner_int_int.vcxproj">
+      <Project>{901FE5C3-4116-34B8-BCE9-604A43B612AB}</Project>
+      <Name>compile_MatrixBase_bottomRightCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_bottomRows_int.vcxproj">
+      <Project>{7CFA4094-20B4-3278-BD4A-DABE2E202AD8}</Project>
+      <Name>compile_MatrixBase_bottomRows_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_cast.vcxproj">
+      <Project>{8DF3BA2C-2755-337D-B7F4-01AA8E57A755}</Project>
+      <Name>compile_MatrixBase_cast</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_col.vcxproj">
+      <Project>{4FAB99B9-5555-39BB-BA8B-0F01C5A1829F}</Project>
+      <Name>compile_MatrixBase_col</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_colwise.vcxproj">
+      <Project>{6474ABD0-4C75-30A3-93FF-E70DD855458E}</Project>
+      <Name>compile_MatrixBase_colwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_computeInverseAndDetWithCheck.vcxproj">
+      <Project>{986D75E2-53A0-3486-A54D-342DF1344750}</Project>
+      <Name>compile_MatrixBase_computeInverseAndDetWithCheck</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_computeInverseWithCheck.vcxproj">
+      <Project>{6BCB53AF-60A6-3D8A-BA44-D763123EE3F8}</Project>
+      <Name>compile_MatrixBase_computeInverseWithCheck</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_cwiseAbs.vcxproj">
+      <Project>{4E567491-4F9A-37D2-A9D4-241817635555}</Project>
+      <Name>compile_MatrixBase_cwiseAbs</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_cwiseAbs2.vcxproj">
+      <Project>{C17D0775-AE1E-3259-8424-CB5FABF917CE}</Project>
+      <Name>compile_MatrixBase_cwiseAbs2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_cwiseEqual.vcxproj">
+      <Project>{1EF12171-FDF2-336B-A79E-7ABBD880C832}</Project>
+      <Name>compile_MatrixBase_cwiseEqual</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_cwiseInverse.vcxproj">
+      <Project>{976AF4E9-21E2-3FD7-BDDF-3903923CDB96}</Project>
+      <Name>compile_MatrixBase_cwiseInverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_cwiseMax.vcxproj">
+      <Project>{17481CB7-C91A-3823-9515-2A1AD822A53D}</Project>
+      <Name>compile_MatrixBase_cwiseMax</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_cwiseMin.vcxproj">
+      <Project>{FB8C81AD-A4B3-3D7B-8829-EF8CA1F7CBC0}</Project>
+      <Name>compile_MatrixBase_cwiseMin</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_cwiseNotEqual.vcxproj">
+      <Project>{1C7B00F2-3CFB-39F7-AC69-1CFDD18845E2}</Project>
+      <Name>compile_MatrixBase_cwiseNotEqual</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_cwiseProduct.vcxproj">
+      <Project>{4E0CB5C3-3EC2-306B-9957-4F7CA40F8161}</Project>
+      <Name>compile_MatrixBase_cwiseProduct</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_cwiseQuotient.vcxproj">
+      <Project>{D37AFE8A-0CBC-3A1C-BDBD-12BFBB525429}</Project>
+      <Name>compile_MatrixBase_cwiseQuotient</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_cwiseSqrt.vcxproj">
+      <Project>{58487B8E-9416-3F8F-AC12-9179D9385B3A}</Project>
+      <Name>compile_MatrixBase_cwiseSqrt</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_diagonal.vcxproj">
+      <Project>{33A31F27-5721-3B87-A713-ADA5330DAAFC}</Project>
+      <Name>compile_MatrixBase_diagonal</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_diagonal_int.vcxproj">
+      <Project>{89EABFBB-CD14-32F2-81DD-0987B8DC81ED}</Project>
+      <Name>compile_MatrixBase_diagonal_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_diagonal_template_int.vcxproj">
+      <Project>{DF7B2C8A-21A2-3F02-9005-069874B07209}</Project>
+      <Name>compile_MatrixBase_diagonal_template_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_eigenvalues.vcxproj">
+      <Project>{ACAAD0C2-E9FB-3AAF-BCFB-07E60BF46A95}</Project>
+      <Name>compile_MatrixBase_eigenvalues</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_end_int.vcxproj">
+      <Project>{F5FB8DEC-7BBD-3E8B-9016-4AB29F00944B}</Project>
+      <Name>compile_MatrixBase_end_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_eval.vcxproj">
+      <Project>{69448684-CE48-370B-9D94-E1A2362427BF}</Project>
+      <Name>compile_MatrixBase_eval</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_extract.vcxproj">
+      <Project>{FA425F54-D3A8-3BBE-B3F4-5F33ABA6093B}</Project>
+      <Name>compile_MatrixBase_extract</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_fixedBlock_int_int.vcxproj">
+      <Project>{6C223FA3-2426-3744-86DA-FDF0D6DEF0C2}</Project>
+      <Name>compile_MatrixBase_fixedBlock_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_identity.vcxproj">
+      <Project>{BD82E752-5ECC-3E03-8164-3980DCD9EFBE}</Project>
+      <Name>compile_MatrixBase_identity</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_identity_int_int.vcxproj">
+      <Project>{5B76E617-38C4-3850-BEC5-0F0397C0B06D}</Project>
+      <Name>compile_MatrixBase_identity_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_inverse.vcxproj">
+      <Project>{02F36265-0B0F-3DD1-A3D6-47707E867492}</Project>
+      <Name>compile_MatrixBase_inverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_isDiagonal.vcxproj">
+      <Project>{055F03F7-FC17-3574-B90E-93D32CD292F4}</Project>
+      <Name>compile_MatrixBase_isDiagonal</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_isIdentity.vcxproj">
+      <Project>{D5D518DA-54CB-38F9-B5B8-B1919FDF2708}</Project>
+      <Name>compile_MatrixBase_isIdentity</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_isOnes.vcxproj">
+      <Project>{1B1451D2-A9C4-38E7-9CF9-00580B9D636D}</Project>
+      <Name>compile_MatrixBase_isOnes</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_isOrthogonal.vcxproj">
+      <Project>{D84F34EE-E241-3F34-B696-D3937D05325A}</Project>
+      <Name>compile_MatrixBase_isOrthogonal</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_isUnitary.vcxproj">
+      <Project>{E41132BA-91FC-3386-9766-E406209A1AB8}</Project>
+      <Name>compile_MatrixBase_isUnitary</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_isZero.vcxproj">
+      <Project>{78274A89-FCEA-352A-AC16-9D387ECA0C59}</Project>
+      <Name>compile_MatrixBase_isZero</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_leftCols_int.vcxproj">
+      <Project>{345A84D3-6F6A-3E38-A714-BD2AE3CFC2BB}</Project>
+      <Name>compile_MatrixBase_leftCols_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_marked.vcxproj">
+      <Project>{C6B331AB-33CF-34EC-950A-C3CC84614BAE}</Project>
+      <Name>compile_MatrixBase_marked</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_noalias.vcxproj">
+      <Project>{655192A2-71DB-3B7C-98BC-1968C5B2E5E7}</Project>
+      <Name>compile_MatrixBase_noalias</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_ones.vcxproj">
+      <Project>{A3E83B80-1BDC-3A5E-9CF5-6486F621EF1C}</Project>
+      <Name>compile_MatrixBase_ones</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_ones_int.vcxproj">
+      <Project>{1C026332-8227-329E-9C26-A5781971F368}</Project>
+      <Name>compile_MatrixBase_ones_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_ones_int_int.vcxproj">
+      <Project>{CBD9E7E8-EFF5-34B4-B927-946D5674352C}</Project>
+      <Name>compile_MatrixBase_ones_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_operatorNorm.vcxproj">
+      <Project>{65C50775-70DC-37F6-A829-DDE520B20526}</Project>
+      <Name>compile_MatrixBase_operatorNorm</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_part.vcxproj">
+      <Project>{EF97297E-964B-3477-BC8D-4697B787DC0D}</Project>
+      <Name>compile_MatrixBase_part</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_prod.vcxproj">
+      <Project>{EBC7C410-383D-338E-A676-773489B691C0}</Project>
+      <Name>compile_MatrixBase_prod</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_random.vcxproj">
+      <Project>{BCCAC223-86EB-3B69-90A0-496B7C2071A5}</Project>
+      <Name>compile_MatrixBase_random</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_random_int.vcxproj">
+      <Project>{D079390D-6076-370A-89B7-224C5C41D02A}</Project>
+      <Name>compile_MatrixBase_random_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_random_int_int.vcxproj">
+      <Project>{213EFA4E-E2E0-3BF6-B366-F72E70E20AF8}</Project>
+      <Name>compile_MatrixBase_random_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_replicate.vcxproj">
+      <Project>{2951F4D4-9C61-3D12-A303-688E616970F9}</Project>
+      <Name>compile_MatrixBase_replicate</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_replicate_int_int.vcxproj">
+      <Project>{43FA10BD-1FD2-3173-8464-2317E652D2D1}</Project>
+      <Name>compile_MatrixBase_replicate_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_reverse.vcxproj">
+      <Project>{6F742A73-83D1-3245-B3C2-FBC3324BD5B2}</Project>
+      <Name>compile_MatrixBase_reverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_rightCols_int.vcxproj">
+      <Project>{79D131DD-A534-3831-9129-AEDD8CAFDF68}</Project>
+      <Name>compile_MatrixBase_rightCols_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_row.vcxproj">
+      <Project>{4C9C852C-9FED-3E61-8EAB-B25D01822078}</Project>
+      <Name>compile_MatrixBase_row</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_rowwise.vcxproj">
+      <Project>{77CA5C00-EA16-31E4-A46F-D383132701B4}</Project>
+      <Name>compile_MatrixBase_rowwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_segment_int_int.vcxproj">
+      <Project>{FF738999-8930-3D34-9A93-6E9AEB1ED27B}</Project>
+      <Name>compile_MatrixBase_segment_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_select.vcxproj">
+      <Project>{A77886EB-BD4B-3040-9376-7C818FADC426}</Project>
+      <Name>compile_MatrixBase_select</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_set.vcxproj">
+      <Project>{10E9B9A7-FA94-37C8-8D8C-D131A81C8D52}</Project>
+      <Name>compile_MatrixBase_set</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_setIdentity.vcxproj">
+      <Project>{E60E0351-3F7B-3C57-9071-A80BEA195D0E}</Project>
+      <Name>compile_MatrixBase_setIdentity</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_setOnes.vcxproj">
+      <Project>{8D34D622-E2EB-3EA7-AA1D-E411F95CB4C1}</Project>
+      <Name>compile_MatrixBase_setOnes</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_setRandom.vcxproj">
+      <Project>{783503C0-B646-31C8-92FC-29385C826C5B}</Project>
+      <Name>compile_MatrixBase_setRandom</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_setZero.vcxproj">
+      <Project>{17FE50F4-5924-3EB9-80D4-1C1907C40F23}</Project>
+      <Name>compile_MatrixBase_setZero</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_start_int.vcxproj">
+      <Project>{3418ACF8-4AC2-39F1-80EA-E87BFCC6FDD8}</Project>
+      <Name>compile_MatrixBase_start_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_template_int_bottomRows.vcxproj">
+      <Project>{3EE98ADC-8BB3-3A90-A56F-2AC9BB111CFE}</Project>
+      <Name>compile_MatrixBase_template_int_bottomRows</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_template_int_end.vcxproj">
+      <Project>{77C8CDF8-E56E-3B0F-88B0-376A90BD4D61}</Project>
+      <Name>compile_MatrixBase_template_int_end</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_template_int_int_block_int_int_int_int.vcxproj">
+      <Project>{A8F591CA-1902-3921-BC02-E788ABB9831D}</Project>
+      <Name>compile_MatrixBase_template_int_int_block_int_int_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_template_int_int_bottomLeftCorner.vcxproj">
+      <Project>{22BCEC7F-624F-37E4-9399-7346490C5D33}</Project>
+      <Name>compile_MatrixBase_template_int_int_bottomLeftCorner</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_template_int_int_bottomLeftCorner_int_int.vcxproj">
+      <Project>{85BD87F1-A184-38CD-BA08-1380967B61B0}</Project>
+      <Name>compile_MatrixBase_template_int_int_bottomLeftCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_template_int_int_bottomRightCorner.vcxproj">
+      <Project>{D8BAF330-6482-395D-AEF7-AEA1FC8F6811}</Project>
+      <Name>compile_MatrixBase_template_int_int_bottomRightCorner</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_template_int_int_bottomRightCorner_int_int.vcxproj">
+      <Project>{FE848EA2-19C8-39FE-8308-9D4826253DE5}</Project>
+      <Name>compile_MatrixBase_template_int_int_bottomRightCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_template_int_int_topLeftCorner.vcxproj">
+      <Project>{D169D5CE-6118-3A0F-8A3B-3C3BCCC0806D}</Project>
+      <Name>compile_MatrixBase_template_int_int_topLeftCorner</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_template_int_int_topLeftCorner_int_int.vcxproj">
+      <Project>{6844763C-39F9-32AD-82EA-2DD8495BCA86}</Project>
+      <Name>compile_MatrixBase_template_int_int_topLeftCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_template_int_int_topRightCorner.vcxproj">
+      <Project>{F68A983D-979A-32F7-AB33-C818CF04C8FB}</Project>
+      <Name>compile_MatrixBase_template_int_int_topRightCorner</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_template_int_int_topRightCorner_int_int.vcxproj">
+      <Project>{094C17F2-5ADD-3503-8AB1-5B462D56416D}</Project>
+      <Name>compile_MatrixBase_template_int_int_topRightCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_template_int_leftCols.vcxproj">
+      <Project>{66FCA7B4-A723-3C75-A0DE-CC682DB8A2ED}</Project>
+      <Name>compile_MatrixBase_template_int_leftCols</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_template_int_rightCols.vcxproj">
+      <Project>{BFB86FD5-0147-33F7-8293-4974695BAF22}</Project>
+      <Name>compile_MatrixBase_template_int_rightCols</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_template_int_segment.vcxproj">
+      <Project>{1013D33F-6B06-36B3-BA9B-7B950464969A}</Project>
+      <Name>compile_MatrixBase_template_int_segment</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_template_int_start.vcxproj">
+      <Project>{F10BC44D-04B4-3941-ACE8-8A8C949040CA}</Project>
+      <Name>compile_MatrixBase_template_int_start</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_template_int_topRows.vcxproj">
+      <Project>{D3700415-5F04-3C28-B19D-969BAE76C43A}</Project>
+      <Name>compile_MatrixBase_template_int_topRows</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_topLeftCorner_int_int.vcxproj">
+      <Project>{6DC4F5F5-9951-3AAA-BB88-CEF5AC57B47F}</Project>
+      <Name>compile_MatrixBase_topLeftCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_topRightCorner_int_int.vcxproj">
+      <Project>{C3B9A892-B594-344E-9B17-F74199051F90}</Project>
+      <Name>compile_MatrixBase_topRightCorner_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_topRows_int.vcxproj">
+      <Project>{4C5A1F23-8F06-3785-855D-9308D932B6B2}</Project>
+      <Name>compile_MatrixBase_topRows_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_transpose.vcxproj">
+      <Project>{CF157C87-97A7-335B-830F-124C4771F47B}</Project>
+      <Name>compile_MatrixBase_transpose</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_zero.vcxproj">
+      <Project>{328646DF-7C0B-380A-A02D-55E104B0D147}</Project>
+      <Name>compile_MatrixBase_zero</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_zero_int.vcxproj">
+      <Project>{0CB5C6DE-8AD8-3739-913C-B481EC2394BC}</Project>
+      <Name>compile_MatrixBase_zero_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_MatrixBase_zero_int_int.vcxproj">
+      <Project>{366B4B58-EFF5-38D8-8582-8297747635E9}</Project>
+      <Name>compile_MatrixBase_zero_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Matrix_resize_NoChange_int.vcxproj">
+      <Project>{CE34C198-1A06-3FE1-A167-EEF0F3A2FB9C}</Project>
+      <Name>compile_Matrix_resize_NoChange_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Matrix_resize_int.vcxproj">
+      <Project>{84E540F2-A467-38C9-A7A6-6C1E07D65B2E}</Project>
+      <Name>compile_Matrix_resize_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Matrix_resize_int_NoChange.vcxproj">
+      <Project>{EB29FECC-E330-33AE-B9AC-569FC72C5C8B}</Project>
+      <Name>compile_Matrix_resize_int_NoChange</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Matrix_resize_int_int.vcxproj">
+      <Project>{C0DFBF9A-310F-3533-81D6-C11AF80B4D89}</Project>
+      <Name>compile_Matrix_resize_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Matrix_setConstant_int.vcxproj">
+      <Project>{8B3F70AD-0AA8-3D76-BE58-328EF6D75DF5}</Project>
+      <Name>compile_Matrix_setConstant_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Matrix_setConstant_int_int.vcxproj">
+      <Project>{19EEBDD4-3FC5-32FF-8D77-DFA5B41FBB20}</Project>
+      <Name>compile_Matrix_setConstant_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Matrix_setIdentity_int_int.vcxproj">
+      <Project>{5132FA93-B600-33AD-BF54-2659096C8FB2}</Project>
+      <Name>compile_Matrix_setIdentity_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Matrix_setOnes_int.vcxproj">
+      <Project>{78ED29DF-57D5-341C-8767-21EE6FB670C5}</Project>
+      <Name>compile_Matrix_setOnes_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Matrix_setOnes_int_int.vcxproj">
+      <Project>{3EC043DD-31A8-326D-9BF3-EDAEA4CAEB42}</Project>
+      <Name>compile_Matrix_setOnes_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Matrix_setRandom_int.vcxproj">
+      <Project>{A1303E8A-2CD5-36BB-9688-830C23CAACE5}</Project>
+      <Name>compile_Matrix_setRandom_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Matrix_setRandom_int_int.vcxproj">
+      <Project>{0F7001CA-A903-3458-8C39-C28CAA3A8D71}</Project>
+      <Name>compile_Matrix_setRandom_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Matrix_setZero_int.vcxproj">
+      <Project>{BB5882AF-A0BF-35DF-87EC-E7C78F3D1588}</Project>
+      <Name>compile_Matrix_setZero_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Matrix_setZero_int_int.vcxproj">
+      <Project>{3E659707-C5CD-3993-A685-541E4C9B053A}</Project>
+      <Name>compile_Matrix_setZero_int_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_PartialPivLU_solve.vcxproj">
+      <Project>{1933D1BA-3E4C-3BBD-875D-8109DB7ACBCD}</Project>
+      <Name>compile_PartialPivLU_solve</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_PartialRedux_count.vcxproj">
+      <Project>{1BEEE72D-8F55-3C5C-BB1B-D7443BBB95B0}</Project>
+      <Name>compile_PartialRedux_count</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_PartialRedux_maxCoeff.vcxproj">
+      <Project>{F3A075F3-7D85-3DE2-B1AE-03B40390E19E}</Project>
+      <Name>compile_PartialRedux_maxCoeff</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_PartialRedux_minCoeff.vcxproj">
+      <Project>{1EF4BF6A-0345-35C2-ACDC-2CCCC2092B12}</Project>
+      <Name>compile_PartialRedux_minCoeff</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_PartialRedux_norm.vcxproj">
+      <Project>{055E41E3-6B0B-3F37-88AA-B078878B3D5D}</Project>
+      <Name>compile_PartialRedux_norm</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_PartialRedux_prod.vcxproj">
+      <Project>{B304688A-AFC0-3730-91C7-FED226FEADE6}</Project>
+      <Name>compile_PartialRedux_prod</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_PartialRedux_squaredNorm.vcxproj">
+      <Project>{65268B03-6EA2-376D-A400-DFD88D953208}</Project>
+      <Name>compile_PartialRedux_squaredNorm</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_PartialRedux_sum.vcxproj">
+      <Project>{0F44B5EF-1823-3D31-8205-11CA58B2C924}</Project>
+      <Name>compile_PartialRedux_sum</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_RealQZ_compute.vcxproj">
+      <Project>{BE56E55F-9F2F-3808-9144-786D0CD6ED72}</Project>
+      <Name>compile_RealQZ_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_RealSchur_RealSchur_MatrixType.vcxproj">
+      <Project>{E15998DB-F669-3947-BBB7-D46AA0911FD7}</Project>
+      <Name>compile_RealSchur_RealSchur_MatrixType</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_RealSchur_compute.vcxproj">
+      <Project>{BC17F61F-D98D-3DBC-B12F-0C4C9A52FA01}</Project>
+      <Name>compile_RealSchur_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver.vcxproj">
+      <Project>{F6561598-2549-3121-BF8D-AFED83ECF36A}</Project>
+      <Name>compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver_MatrixType.vcxproj">
+      <Project>{14038B37-3134-31D4-B582-DC5F35B77C70}</Project>
+      <Name>compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver_MatrixType</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver_MatrixType2.vcxproj">
+      <Project>{F12249D4-7EF1-3D25-BE26-10640ED66990}</Project>
+      <Name>compile_SelfAdjointEigenSolver_SelfAdjointEigenSolver_MatrixType2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_SelfAdjointEigenSolver_compute_MatrixType.vcxproj">
+      <Project>{28428AD6-06F1-349B-A957-CD1A617693DD}</Project>
+      <Name>compile_SelfAdjointEigenSolver_compute_MatrixType</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_SelfAdjointEigenSolver_compute_MatrixType2.vcxproj">
+      <Project>{0DFA7B39-37D3-3988-BEEA-140C597B33D5}</Project>
+      <Name>compile_SelfAdjointEigenSolver_compute_MatrixType2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_SelfAdjointEigenSolver_eigenvalues.vcxproj">
+      <Project>{7AB0AA7E-BD34-34FA-B089-046F7D3B8347}</Project>
+      <Name>compile_SelfAdjointEigenSolver_eigenvalues</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_SelfAdjointEigenSolver_eigenvectors.vcxproj">
+      <Project>{E34A7303-FF24-3745-BEB5-C58112E1C6F4}</Project>
+      <Name>compile_SelfAdjointEigenSolver_eigenvectors</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_SelfAdjointEigenSolver_operatorInverseSqrt.vcxproj">
+      <Project>{7AE1A93A-0288-3D73-BAF5-56FC3803BCE4}</Project>
+      <Name>compile_SelfAdjointEigenSolver_operatorInverseSqrt</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_SelfAdjointEigenSolver_operatorSqrt.vcxproj">
+      <Project>{E9922CDB-D425-3FAE-8BDA-B325F7898945}</Project>
+      <Name>compile_SelfAdjointEigenSolver_operatorSqrt</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_SelfAdjointView_eigenvalues.vcxproj">
+      <Project>{D9B7B6DF-9CEE-3CB8-A98E-767861AD05B2}</Project>
+      <Name>compile_SelfAdjointView_eigenvalues</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_SelfAdjointView_operatorNorm.vcxproj">
+      <Project>{D3D64F13-A980-34A4-B1C3-13C37AA875E7}</Project>
+      <Name>compile_SelfAdjointView_operatorNorm</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_TopicAliasing_block.vcxproj">
+      <Project>{58E5F134-446C-33B0-B508-3F22CE51A91B}</Project>
+      <Name>compile_TopicAliasing_block</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_TopicAliasing_block_correct.vcxproj">
+      <Project>{E3FC381A-9774-38D5-A07B-EF23A82E6702}</Project>
+      <Name>compile_TopicAliasing_block_correct</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_TopicAliasing_cwise.vcxproj">
+      <Project>{4D443515-5004-3092-8955-06379E44D03F}</Project>
+      <Name>compile_TopicAliasing_cwise</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_TopicAliasing_mult1.vcxproj">
+      <Project>{F31AC849-105E-31DC-A586-6822F676DF2C}</Project>
+      <Name>compile_TopicAliasing_mult1</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_TopicAliasing_mult2.vcxproj">
+      <Project>{4B89CF42-BE06-3287-9FC9-A5E61ED249DD}</Project>
+      <Name>compile_TopicAliasing_mult2</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_TopicAliasing_mult3.vcxproj">
+      <Project>{2488C991-10BF-3621-A485-70A8450BACEF}</Project>
+      <Name>compile_TopicAliasing_mult3</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_TopicStorageOrders_example.vcxproj">
+      <Project>{4C63AF44-836E-3BD2-B0F7-87F882796EDC}</Project>
+      <Name>compile_TopicStorageOrders_example</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tridiagonalization_Tridiagonalization_MatrixType.vcxproj">
+      <Project>{BE16864D-73B6-3284-A49B-661967E7E8B3}</Project>
+      <Name>compile_Tridiagonalization_Tridiagonalization_MatrixType</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tridiagonalization_compute.vcxproj">
+      <Project>{A7A24659-2A75-32CA-9E57-B1B785D9BD86}</Project>
+      <Name>compile_Tridiagonalization_compute</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tridiagonalization_decomposeInPlace.vcxproj">
+      <Project>{8C28C667-6334-3CAE-858E-B5F3C3B63BBC}</Project>
+      <Name>compile_Tridiagonalization_decomposeInPlace</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tridiagonalization_diagonal.vcxproj">
+      <Project>{DAD41B5E-14DA-3E0A-A74E-1CDCF64CF8DD}</Project>
+      <Name>compile_Tridiagonalization_diagonal</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tridiagonalization_householderCoefficients.vcxproj">
+      <Project>{FD5239CD-7A61-3290-AEA8-918FAD7A67DE}</Project>
+      <Name>compile_Tridiagonalization_householderCoefficients</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tridiagonalization_packedMatrix.vcxproj">
+      <Project>{73FA0D9D-0DEA-3CC3-BB02-E42BD08BDC22}</Project>
+      <Name>compile_Tridiagonalization_packedMatrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tutorial_AdvancedInitialization_Block.vcxproj">
+      <Project>{AF1C8954-90C7-3683-9DCA-7F4C4C3B65ED}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_Block</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tutorial_AdvancedInitialization_CommaTemporary.vcxproj">
+      <Project>{FCBA2091-5D82-3637-BA01-35E040CC50EA}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_CommaTemporary</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tutorial_AdvancedInitialization_Join.vcxproj">
+      <Project>{DA154FA7-0B92-3391-8F29-FE52BBBF1BE7}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_Join</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tutorial_AdvancedInitialization_LinSpaced.vcxproj">
+      <Project>{3C982478-0758-3C15-B45E-EB6327FC1807}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_LinSpaced</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tutorial_AdvancedInitialization_ThreeWays.vcxproj">
+      <Project>{C02A6E35-5EB7-3DCE-98EB-50A192B04E9F}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_ThreeWays</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tutorial_AdvancedInitialization_Zero.vcxproj">
+      <Project>{3D935BAA-4C27-37B3-9D8A-5C82B6D85643}</Project>
+      <Name>compile_Tutorial_AdvancedInitialization_Zero</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tutorial_Map_rowmajor.vcxproj">
+      <Project>{4AF40EEF-6F27-309A-B1E4-BE3919549BD8}</Project>
+      <Name>compile_Tutorial_Map_rowmajor</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tutorial_Map_using.vcxproj">
+      <Project>{DA9CC18B-22F5-3A44-9F66-00E9AAFD49E2}</Project>
+      <Name>compile_Tutorial_Map_using</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tutorial_commainit_01.vcxproj">
+      <Project>{A288A60A-E312-34A0-B4CD-D1D370646AAD}</Project>
+      <Name>compile_Tutorial_commainit_01</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tutorial_commainit_01b.vcxproj">
+      <Project>{2F653823-9B48-3606-B067-709F2B3CCD6E}</Project>
+      <Name>compile_Tutorial_commainit_01b</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tutorial_commainit_02.vcxproj">
+      <Project>{221A4D09-FC73-3C69-B1AE-D9FD8F6A502F}</Project>
+      <Name>compile_Tutorial_commainit_02</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tutorial_solve_matrix_inverse.vcxproj">
+      <Project>{DC59F9B0-157C-3CCC-80E3-3E946FD7A90B}</Project>
+      <Name>compile_Tutorial_solve_matrix_inverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tutorial_solve_multiple_rhs.vcxproj">
+      <Project>{225F55E0-A0DF-3811-A1EB-C34C396CBE6D}</Project>
+      <Name>compile_Tutorial_solve_multiple_rhs</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tutorial_solve_reuse_decomposition.vcxproj">
+      <Project>{984E2C96-5407-3EDE-A407-55039B4A5793}</Project>
+      <Name>compile_Tutorial_solve_reuse_decomposition</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tutorial_solve_singular.vcxproj">
+      <Project>{210CBEC1-AC9C-3913-87EB-C5D050C9D46E}</Project>
+      <Name>compile_Tutorial_solve_singular</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tutorial_solve_triangular.vcxproj">
+      <Project>{5B9AA0ED-9206-3A2F-ABC7-42995FC8F937}</Project>
+      <Name>compile_Tutorial_solve_triangular</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Tutorial_solve_triangular_inplace.vcxproj">
+      <Project>{63BD1F34-DC64-38AE-8FE6-5EC1314363CD}</Project>
+      <Name>compile_Tutorial_solve_triangular_inplace</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_Vectorwise_reverse.vcxproj">
+      <Project>{7DBF67BE-5C27-3E6B-A5B6-B059BBBD50FA}</Project>
+      <Name>compile_Vectorwise_reverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_class_FullPivLU.vcxproj">
+      <Project>{E716DCDB-6F95-34C2-9FAB-21FC16252D96}</Project>
+      <Name>compile_class_FullPivLU</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_tut_arithmetic_redux_minmax.vcxproj">
+      <Project>{BD72AC72-08FD-37CB-B012-9054D7C631B1}</Project>
+      <Name>compile_tut_arithmetic_redux_minmax</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_tut_arithmetic_transpose_aliasing.vcxproj">
+      <Project>{BBB29AF1-68E2-3169-96D3-38C2C02B39E7}</Project>
+      <Name>compile_tut_arithmetic_transpose_aliasing</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_tut_arithmetic_transpose_conjugate.vcxproj">
+      <Project>{975101A9-856F-3048-85ED-B542FF849509}</Project>
+      <Name>compile_tut_arithmetic_transpose_conjugate</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_tut_arithmetic_transpose_inplace.vcxproj">
+      <Project>{0F1B8E8E-69DC-3C63-82F9-04103B68EF64}</Project>
+      <Name>compile_tut_arithmetic_transpose_inplace</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\snippets\compile_tut_matrix_assignment_resizing.vcxproj">
+      <Project>{E5FAF671-B6E6-3AE5-BF9D-B363C0D8477B}</Project>
+      <Name>compile_tut_matrix_assignment_resizing</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\doc.vcxproj">
+      <Project>{C402FECC-7FB0-316F-814C-3C39E457E629}</Project>
+      <Name>doc</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\doc-eigen-prerequisites.vcxproj">
+      <Project>{7FCF4EA0-5FA0-38B5-8A04-A58E0CC48ADA}</Project>
+      <Name>doc-eigen-prerequisites</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\doc-unsupported-prerequisites.vcxproj">
+      <Project>{A0487B9B-12D6-31D4-8BF4-C65196096146}</Project>
+      <Name>doc-unsupported-prerequisites</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\function_taking_eigenbase.vcxproj">
+      <Project>{1DE05920-F660-333D-806D-FF0ED9181EDC}</Project>
+      <Name>function_taking_eigenbase</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\function_taking_ref.vcxproj">
+      <Project>{DCD5C7A1-A8F4-33D9-AEB9-EE7EAFFF3F9B}</Project>
+      <Name>function_taking_ref</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\tut_arithmetic_add_sub.vcxproj">
+      <Project>{D437801D-CEB5-3D98-85A9-942F7047F41B}</Project>
+      <Name>tut_arithmetic_add_sub</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\tut_arithmetic_dot_cross.vcxproj">
+      <Project>{C9FF9A4F-1345-38F6-B8A2-337C5984C830}</Project>
+      <Name>tut_arithmetic_dot_cross</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\tut_arithmetic_matrix_mul.vcxproj">
+      <Project>{133EFDAB-923F-3357-8350-715B7E6A0736}</Project>
+      <Name>tut_arithmetic_matrix_mul</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\tut_arithmetic_redux_basic.vcxproj">
+      <Project>{03FE1E6D-272A-326F-BA7C-AD54F75286B6}</Project>
+      <Name>tut_arithmetic_redux_basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\tut_arithmetic_scalar_mul_div.vcxproj">
+      <Project>{AF7E944F-D1ED-3259-9EA4-9805A261AF59}</Project>
+      <Name>tut_arithmetic_scalar_mul_div</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\tut_matrix_coefficient_accessors.vcxproj">
+      <Project>{B171A4D2-3C04-3543-A411-61CFD96CC6A6}</Project>
+      <Name>tut_matrix_coefficient_accessors</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\tut_matrix_resize.vcxproj">
+      <Project>{4A5A4AA3-3CFD-3248-B5E1-E59EBBB0E47E}</Project>
+      <Name>tut_matrix_resize</Name>
+    </ProjectReference>
+    <ProjectReference Include="E:\Libraries\eigen-3.2.7\build\doc\examples\tut_matrix_resize_fixed_size.vcxproj">
+      <Project>{544A81F0-0AD4-3C6E-8111-389F2FFEDB0F}</Project>
+      <Name>tut_matrix_resize_fixed_size</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
