@@ -1,6 +1,7 @@
 #include "lungModelling.h"
 #include <iostream>
 #include <filesystem>
+#include <chrono> // For timestamps
 
 #include "itkImage.h"
 #include <itkImageFileWriter.h>
@@ -20,6 +21,103 @@
 #else
 #define TXT ""
 #endif
+
+std::string getCurrentTimestamp()
+{
+	auto now = std::chrono::system_clock::now();
+	auto in_time_t = std::chrono::system_clock::to_time_t(now);
+	std::stringstream ss;
+	ss << std::put_time(std::localtime(&in_time_t), "%Y-%m-%d %X");
+	return ss.str();
+}
+
+void log(const std::string &message)
+{
+	std::cout << "[" << getCurrentTimestamp() << "] " << message << std::endl;
+}
+
+void performRegionGrowing(voxelSpace *Vox,
+						  std::vector<std::vector<std::vector<int>>> &A,
+						  const std::vector<mCellSimplified> &Asparse,
+						  int label, int lim)
+{
+	log("Starting region growing with label: " + std::to_string(label));
+
+	int seed = Vox->findSeed(A, Asparse, 1);
+	if (seed == -1)
+	{
+		log("No suitable seed found. Exiting region growing.");
+		return;
+	}
+
+	mIndex seedIndex = Asparse[seed].index;
+	A[seedIndex.x][seedIndex.y][seedIndex.z] = label;
+	log("Seed selected at index: [" + std::to_string(seedIndex.x) + ", " +
+		std::to_string(seedIndex.y) + ", " + std::to_string(seedIndex.z) + "]");
+
+	std::vector<mIndex> toInvestigate;
+	toInvestigate.push_back(seedIndex);
+	int regionGrowingFront = 0;
+	const int barWidth = 70;
+
+	while (regionGrowingFront < lim)
+	{
+		int currentSize = toInvestigate.size();
+		for (int i = 0; i < currentSize; ++i)
+		{
+			mIndex ind = toInvestigate[i];
+			if (ind.isInsideMatrix(A, 2))
+			{
+				bool found = Vox->regionHasNotLabel(&ind, A, 2, 0);
+				bool isNeighb = Vox->regionHasOnlyLabel(&ind, A, 1, label);
+				if (found && isNeighb)
+				{
+					A[ind.x][ind.y][ind.z] = label;
+				}
+			}
+		}
+
+		regionGrowingFront++;
+
+		// Update and display the progress bar
+		float progress = static_cast<float>(regionGrowingFront) / lim;
+		std::cout << "[";
+		int pos = static_cast<int>(barWidth * progress);
+		for (int i = 0; i < barWidth; ++i)
+		{
+			if (i < pos)
+				std::cout << "=";
+			else if (i == pos)
+				std::cout << ">";
+			else
+				std::cout << " ";
+		}
+		std::cout << "] " << static_cast<int>(progress * 100.0) << " %\r";
+		std::cout.flush();
+
+		// Expand the region growing front
+		toInvestigate.clear();
+		int c = regionGrowingFront;
+		for (int r1 = seedIndex.x - c; r1 <= seedIndex.x + c; r1++)
+		{
+			for (int r2 = seedIndex.y - c; r2 <= seedIndex.y + c; r2++)
+			{
+				for (int r3 = seedIndex.z - c; r3 <= seedIndex.z + c; r3++)
+				{
+					if ((r1 == seedIndex.x - c || r1 == seedIndex.x + c) ||
+						(r2 == seedIndex.y - c || r2 == seedIndex.y + c) ||
+						(r3 == seedIndex.z - c || r3 == seedIndex.z + c))
+					{
+						toInvestigate.push_back(mIndex(r1, r2, r3));
+					}
+				}
+			}
+		}
+	}
+
+	std::cout << std::endl; // End the progress bar line
+	log("Region growing with label " + std::to_string(label) + " completed");
+}
 
 int main(int argc, char **argv)
 {
@@ -114,6 +212,7 @@ int main(int argc, char **argv)
 		a2(i) = value;
 		i++;
 	}
+
 	std::cout << std::endl
 			  << "Total count: " << i << std::endl;
 	int idx = 0;
@@ -130,6 +229,7 @@ int main(int argc, char **argv)
 	}
 
 	std::vector<mCellSimplified> Asparse;
+	log("Starting matrix to sparse representation conversion");
 	Vox->Matrix2SparseRepresentationByValue(A, Asparse, 1.0);
 
 	label = labelsArray[0];
@@ -141,62 +241,9 @@ int main(int argc, char **argv)
 	toInvestigate.clear();
 	toInvestigate.push_back(seedIndex);
 	int regionGrowingFront = 0;
-	for (int pp = 0; pp < toInvestigate.size(); pp++)
-	{
-		mIndex *ind = &toInvestigate[pp];
-		if (ind->isInsideMatrix(A, 2))
-		{
-			bool found = Vox->regionHasNotLabel(ind, A, 2, 0);
-			bool isNeighb = Vox->regionHasOnlyLabel(ind, A, 1, label);
-			if (found && isNeighb)
-			{
-				A[ind->x][ind->y][ind->z] = label;
-			}
-		}
-		if (pp == toInvestigate.size() - 1)
-		{
-			regionGrowingFront++;
-			int c = regionGrowingFront;
-			int r1, r2, r3;
-			toInvestigate.clear();
-			pp = 0;
-			for (r1 = seedIndex.x - c; r1 <= seedIndex.x + c; r1 = r1 + 2 * c)
-			{
-				for (r2 = seedIndex.y - c; r2 <= seedIndex.y + c; r2++)
-				{
-					for (r3 = seedIndex.z - c; r3 <= seedIndex.z + c; r3++)
-					{
-						toInvestigate.push_back(mIndex(r1, r2, r3));
-					}
-				}
-			}
-			for (r2 = seedIndex.y - c; r2 <= seedIndex.y + c; r2 = r2 + 2 * c)
-			{
-				for (r1 = seedIndex.x - c; r1 <= seedIndex.x + c; r1++)
-				{
-					for (r3 = seedIndex.z - c; r3 <= seedIndex.z + c; r3++)
-					{
-						toInvestigate.push_back(mIndex(r1, r2, r3));
-					}
-				}
-			}
-			for (r3 = seedIndex.z - c; r3 <= seedIndex.z + c; r3 = r3 + 2 * c)
-			{
-				for (r1 = seedIndex.x - c; r1 <= seedIndex.x + c; r1++)
-				{
-					for (r2 = seedIndex.y - c; r2 <= seedIndex.y + c; r2++)
-					{
-						toInvestigate.push_back(mIndex(r1, r2, r3));
-					}
-				}
-			}
-		}
-		if (regionGrowingFront == lim)
-		{
-			regionGrowingFront = 0;
-			toInvestigate.clear();
-		}
-	}
+	log("Performing FIRST region growing");
+
+	performRegionGrowing(Vox, A, Asparse, labelsArray[0], lim);
 
 	label = labelsArray[1];
 
@@ -207,60 +254,9 @@ int main(int argc, char **argv)
 	toInvestigate.push_back(seedIndex);
 	regionGrowingFront = 0;
 
-	for (int pp = 0; pp < toInvestigate.size(); pp++)
-	{
-		mIndex *ind = &toInvestigate[pp];
-		if (ind->isInsideMatrix(A, 2))
-		{
-			if (Vox->regionHasNotLabel(ind, A, 2, 0) && Vox->regionHasNotLabel(ind, A, 2, label) && Vox->regionHasOnlyLabel(ind, A, 1, label))
-			{
-				A[ind->x][ind->y][ind->z] = label;
-			}
-		}
-		if (pp == toInvestigate.size() - 1)
-		{
-			regionGrowingFront++;
-			int c = regionGrowingFront;
-			int r1, r2, r3;
-			toInvestigate.clear();
-			pp = 0;
-			for (r1 = seedIndex.x - c; r1 <= seedIndex.x + c; r1 = r1 + 2 * c)
-			{
-				for (r2 = seedIndex.y - c; r2 <= seedIndex.y + c; r2++)
-				{
-					for (r3 = seedIndex.z - c; r3 <= seedIndex.z + c; r3++)
-					{
-						toInvestigate.push_back(mIndex(r1, r2, r3));
-					}
-				}
-			}
-			for (r2 = seedIndex.y - c; r2 <= seedIndex.y + c; r2 = r2 + 2 * c)
-			{
-				for (r1 = seedIndex.x - c; r1 <= seedIndex.x + c; r1++)
-				{
-					for (r3 = seedIndex.z - c; r3 <= seedIndex.z + c; r3++)
-					{
-						toInvestigate.push_back(mIndex(r1, r2, r3));
-					}
-				}
-			}
-			for (r3 = seedIndex.z - c; r3 <= seedIndex.z + c; r3 = r3 + 2 * c)
-			{
-				for (r1 = seedIndex.x - c; r1 <= seedIndex.x + c; r1++)
-				{
-					for (r2 = seedIndex.y - c; r2 <= seedIndex.y + c; r2++)
-					{
-						toInvestigate.push_back(mIndex(r1, r2, r3));
-					}
-				}
-			}
-		}
-		if (regionGrowingFront == lim)
-		{
-			regionGrowingFront = 0;
-			toInvestigate.clear();
-		}
-	}
+	log("Performing SECOND region growing");
+
+	performRegionGrowing(Vox, A, Asparse, labelsArray[1], lim);
 
 	for (int i = 0; i < A.size(); i++)
 	{
@@ -277,6 +273,7 @@ int main(int argc, char **argv)
 	}
 
 	std::cout << A.size() << " " << A[0].size() << " " << A[0][0].size() << std::endl;
+	log("Exporting models");
 
 	volume *result2 = new volume();
 	while (result2->vertices.size() < alveoli)
@@ -342,6 +339,8 @@ int main(int argc, char **argv)
 	}
 	simulation *s = new simulation();
 	status *st = new status();
+	log("Extending bronchial tree");
+
 	try
 	{
 		s->extendBronchialTreeV2(
@@ -369,19 +368,15 @@ int main(int argc, char **argv)
 	{
 		std::cout << " a standard exception was caught, with message '" << e.what() << "'\n";
 	}
-	// delete s;
 
 	return 0;
 
 	dotObj *fullTreeExtendedModel = new dotObj();
 	dotObj *rec = new dotObj();
 
-	// fullTreeExtendedModel->initializeFromFile(path + "_7_fullTreeOversampled.obj");
 	fullTreeExtendedModel->initializeFromFile(path + "_7_fullTree.obj");
-	// fullTreeExtendedModel = extractedCenterlineModel;
 	fullTreeExtendedModel->scale(1 / dz, 1 / dy, 1 / dx);
 	fullTreeExtendedModel->graphBased1DModelAnalysis();
-	// fullTreeExtendedModel->mAnalysis.exportGraphFeatures(path+"distributionOfAnglesnLengths.csv");
 
 	fullTreeExtendedModel->mAnalysis.graph.ggraph2Model(rec);
 	rec->exportToFile(path + "_7_rec");
