@@ -369,8 +369,8 @@ int main(int argc, char **argv)
 		std::cout << " a standard exception was caught, with message '" << e.what() << "'\n";
 	}
 
-	return 0;
-
+/* 	return 0;
+ */
 	dotObj *fullTreeExtendedModel = new dotObj();
 	dotObj *rec = new dotObj();
 
